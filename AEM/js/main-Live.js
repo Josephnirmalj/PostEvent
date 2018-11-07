@@ -673,6 +673,9 @@ $(document).ready(function(e) {
 	$("#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4").on("click",function(){
 		var countA="";
 		var getClassName = $(this).attr("class");
+		var getElementID = $(this).attr("id");
+		var getArticleTitle = $("#"+getElementID+" p").text();
+		var getArticleCat = $("#"+getElementID+" h5").text();
 		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
 			var getCommonLength = $(".related-articles .speaker-thumb .session-col-left").length;
 			for(var i=0;i<getCommonLength;i++)
@@ -688,7 +691,7 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalClicksRelatedArticle="+countA+";expires="+newdate+";path=/";
-			ajaxFormSubmit();
+			ajaxFormSubmit(getArticleCat,getArticleTitle);
 	});
 	$(".showVideo").on("click",function(){
 		$("#overlayVideo #videoPlayerURL").addClass("showVideoPlayer");
