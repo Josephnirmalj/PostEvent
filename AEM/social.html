@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+	<title>Test page</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+	<style type="text/css">
+		.popup{
+			display: none;
+		}
+		a{
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<a href="javascript:void(0)" class="show-1">Show pop up 1 </a>
+	<a href="javascript:void(0)" class="show-2">Show pop up 2 </a>
+	<a href="javascript:void(0)" class="show-3">Show pop up 3 </a>
+	<a href="javascript:void(0)" class="show-4">Show pop up 4 </a>
+<div class="popup">Pop up 1</div>
+<div class="popup">Pop up 2</div>
+<div class="popup">Pop up 3</div>
+<div class="popup">Pop up 4</div>
+</body>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("a").on("click",function(){
+			var getClass = $(this).attr("class");
+			var getLocation = window.location;
+			//remove parameter from url
+			console.log(document.title);
+			window.history.replaceState({}, document.title, "#" + "");
+			//add parameter to URL
+			window.history.pushState("","",getLocation+getClass);
+			var strURL = document.location.href;
+			var pathArray = strURL.split('#');
+			var segment = pathArray[1];
+		});
+	});
+</script>
+</html>

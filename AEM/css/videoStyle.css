@@ -1,0 +1,52 @@
+#videoPopUp{
+	overflow-y: auto;
+    position: fixed;
+   /* display: block;*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0009;
+    z-index: 999;
+    transition: .5s;
+    visibility: visible;
+    opacity: 1;
+}
+.videoPopUpLayer{
+	width: 100%;
+	max-width: 750px;
+	margin: auto;
+	position: absolute;
+	top: 15%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+#videoPopUp.hide{
+	/*display: none;*/
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	transition: .5s;
+}
+.popUpCloseBtn{
+	float: right;
+	width: 25px;
+	height: 25px;
+	transform: rotate(45deg);
+	transition: .2s;
+	cursor: pointer;
+}
+.popUpCloseBtn:hover {
+    transform: rotate(0deg);
+    transition: .2s;
+    cursor: pointer;
+}
+#videoPopUp .formheader{
+	height: 25px;
+	box-sizing: content-box;
+}
