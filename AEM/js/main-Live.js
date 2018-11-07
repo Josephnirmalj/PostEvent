@@ -495,7 +495,7 @@ $(document).ready(function(e) {
 		$("#relVidThumbDate2").text(dataVideo[arraySelectionID].relVidThumbDate2);
 		$("#relVidThumbDesc2").text(dataVideo[arraySelectionID].relVidThumbDesc2);
 		$("#relVidThumbSpeaker2").text(dataVideo[arraySelectionID].relVidThumbSpeaker2);
-		ajaxFormSubmit(dataVideo[arraySelectionID].videoCat,dataVideo[arraySelectionID].videoHead);
+		//ajaxFormSubmit(dataVideo[arraySelectionID].videoCat,dataVideo[arraySelectionID].videoHead);
 		homeVideoCtrl();
 		//content popup
 	}
@@ -604,7 +604,7 @@ $(document).ready(function(e) {
 		$("#relArtThumbDate2").text(dataArticle[arraySelectionID].relArtThumbDate2);
 		$("#relArtThumbDesc2").text(dataArticle[arraySelectionID].relArtThumbDesc2);
 		$("#relArtThumbSpeaker2").text(dataArticle[arraySelectionID].relArtThumbSpeaker2);
-		ajaxFormSubmit(dataArticle[arraySelectionID].artCat,dataArticle[arraySelectionID].artMainHead);
+		//ajaxFormSubmit(dataArticle[arraySelectionID].artCat,dataArticle[arraySelectionID].artMainHead);
 		homeVideoCtrl();
 	}
 	//create cookie on pdf download
@@ -632,6 +632,8 @@ $(document).ready(function(e) {
 	$("#VideoDownload").on("click",function(){
 		var countA="";
 		var getClassName = $(this).attr("class");
+		var getTitle = $("#videoHead").text();
+		var getCar = $("#videoCat").text();
 		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
 			var getCommonLength =  $(".video-doc-content").length;
 			for(var i=0;i<getCommonLength;i++)
@@ -647,11 +649,13 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalPDFDownloadVideo="+countA+";expires="+newdate+";path=/";
-			ajaxFormSubmit();
+			ajaxFormSubmit(getCar,getTitle);
 	});
 	$("#artDownload").on("click",function(){
 		var countA="";
 		var getClassName = $(this).attr("class");
+		var getTitle = $("#artMainHead").text();
+		var getCar = $("#artCat").text();
 		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
 			var getCommonLength = $(".pdf-doc-content").length;
 			for(var i=0;i<getCommonLength;i++)
@@ -667,7 +671,7 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalPDFDownloadArticle="+countA+";expires="+newdate+";path=/";
-			ajaxFormSubmit();
+			ajaxFormSubmit(getCar,getTitle);
 	});
 	//create cookie when clicking related articles
 	$("#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4").on("click",function(){
