@@ -681,7 +681,8 @@ $(document).ready(function(e) {
 		var getArticleTitle = $("#"+getElementID+" p").text();
 		var getArticleCat = $("#"+getElementID+" h5").text();
 		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
-			var getCommonLength = $(".related-articles .speaker-thumb .session-col-left").length;
+			//var getCommonLength = $(".related-articles .speaker-thumb .session-col-left").length;
+			var getCommonLength = dataArticle.length*4;
 			for(var i=0;i<getCommonLength;i++)
 			{
 				var countVall = getCookie("clicksRelatedArticle_"+i);
@@ -691,7 +692,6 @@ $(document).ready(function(e) {
 				if(countA ==""){
 					countA = 0;
 				}
-
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalClicksRelatedArticle="+countA+";expires="+newdate+";path=/";
