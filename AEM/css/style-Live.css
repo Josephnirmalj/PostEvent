@@ -920,7 +920,6 @@ a.downloadLink {
 	bottom: 0;
 	background-color: #000;
 	z-index: 999;
-	cursor: pointer;
 	transition: .5s;
 	visibility: visible;
 	opacity: 1
