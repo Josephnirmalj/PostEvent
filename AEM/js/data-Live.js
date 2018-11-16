@@ -109,7 +109,7 @@ var dataVideo=[
 	videoHead:"Keynote - Innovate Today & Customer Case Study - KPMG",
 	videoDate:"30 April | 1:10:34",
 	videoContent:"This session covers the phenomenon of digital transformation as a driving force for IT, workforce and security transformations in today's organizations. Dell Technologies portfolio is optimized to assist our customers get the most out of their transformation's experiences. We will illustrate how our customers have leveraged our portfolio to achieve significant business results through reinvention of their legacy businesses, optimization of productivity, and new courses they set for their businesses with ongoing focus on innovation. The session will also cover how success hinges on business becoming more intelligent by leveraging their data and emerging technologies.",
-	VideoDownload:"",
+	VideoDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/DTF18_Keynote_APJ_Transformations_Lyon%20Poh_Amit.pdf",
 	cookieForLead:"videoArticle_3",
 
 	VideoSpeakerName1:"Amit Midha",
@@ -1206,7 +1206,7 @@ var dataArticle=[
 		relArtClicksCookie2:"clicksRelatedArticle_50",
 		
 		relArtIconUrl3:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/Dell_CS-ebook_v7_11x8.5.pdf",
-		relArtIconImg3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon33.jpg",
+		relArtIconImg3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 		relArtIconTitle3:"eBook",
 		relArtIconDecs3:"Kickstart Your Workforce Transformation eBook",
 		relArtClicksCookie3:"clicksRelatedArticle_43",
