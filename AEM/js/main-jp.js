@@ -7,7 +7,7 @@ $(document).ready(function(e) {
 	//page load cookie for page view count , increase every page refresh
 	var getCookieOnload = getCookie("pageLoadView");
 	if(getCookieOnload == ""){
-		document.cookie = "pageLoadView="+1+";expires="+newdate+";path=/";
+		document.cookie = " ="+1+";expires="+newdate+";path=/";
 	}
 	else{
 		getCookieOnload++;
@@ -260,7 +260,7 @@ $(document).ready(function(e) {
 				var optin = $("#optin").val();
 				if(email == ""){
 					$("#errOptin").text("Enter Email");
-					errmsg='emapty';
+					errmsg='empty';
 				}
 				else if(!checkemail(email)){
 					$("#errOptin").text("Enter Valid Email");
@@ -391,8 +391,10 @@ $(document).ready(function(e) {
 
 			//nav bar ends
 	$(".video-doc-content").on("click",function(){
-		var getVideoArticleIDClick = $(this).attr("id");
+			var getVideoArticleIDClick = $(this).attr("id");
 		articleVideo(getVideoArticleIDClick);
+	
+
 	});
 	function articleVideo(getVideoArticleIDClick){
 			var countV="";
@@ -441,7 +443,7 @@ $(document).ready(function(e) {
 		$("#showVideoThum").addClass(dataVideo[arraySelectionID].cookieForLeadVideo);
 		//$("#videoPlayerURL").append(dataVideo[arraySelectionID].videoPlayerURL);
 		$("#videoCat").text(dataVideo[arraySelectionID].videoCat);
-		$("#videoHead").text(dataVideo[arraySelectionID].videoHead);
+		$("#videoHead").html(dataVideo[arraySelectionID].videoHead);
 		$("#videoDate").text(dataVideo[arraySelectionID].videoDate);
 		$("#videoContent").text(dataVideo[arraySelectionID].videoContent);
 		$("#VideoDownload").attr("href",dataVideo[arraySelectionID].VideoDownload);
@@ -482,6 +484,13 @@ $(document).ready(function(e) {
 		$("#relVidThumbDate2").text(dataVideo[arraySelectionID].relVidThumbDate2);
 		$("#relVidThumbDesc2").text(dataVideo[arraySelectionID].relVidThumbDesc2);
 		$("#relVidThumbSpeaker2").text(dataVideo[arraySelectionID].relVidThumbSpeaker2);
+		if($("#"+getVideoArticleIDClick).hasClass("hiderelated"))
+		{
+			$("#VideoDownload").hide();
+		}
+		else{  
+			$("#VideoDownload").show();
+		}
 		ajaxFormSubmit(dataVideo[arraySelectionID].videoCat,dataVideo[arraySelectionID].videoHead);
 		homeVideoCtrl();
 		//content popup
@@ -543,7 +552,7 @@ $(document).ready(function(e) {
 		$("#artCat").text(dataArticle[arraySelectionID].artCat);
 		$("#artMainHead").html(dataArticle[arraySelectionID].artMainHead);
 		$("#artDate").text(dataArticle[arraySelectionID].artDate);
-		$("#artMainContent").text(dataArticle[arraySelectionID].artMainContent);
+		$("#artMainContent").html(dataArticle[arraySelectionID].artMainContent);
 		$("#artDownload").attr("href",dataArticle[arraySelectionID].artDownload);
 		$("#artDownload").removeClass();
 		$("#artDownload").addClass(dataArticle[arraySelectionID].cookieForLead);
@@ -575,19 +584,28 @@ $(document).ready(function(e) {
 		//$(".relArtThumb1").addClass(dataArticle[arraySelectionID].relArtThumbOverlay1);
 		$("#relArtThumbImg1").attr("src",dataArticle[arraySelectionID].relArtThumbImg1);
 		$("#relArtThumbDate1").text(dataArticle[arraySelectionID].relArtThumbDate1);
-		$("#relArtThumbDesc1").text(dataArticle[arraySelectionID].relArtThumbDesc1);
+		$("#relArtThumbDesc1").html(dataArticle[arraySelectionID].relArtThumbDesc1);
 		$("#relArtThumbSpeaker1").text(dataArticle[arraySelectionID].relArtThumbSpeaker1);
 		$(".relArtThumb2").attr("id",dataArticle[arraySelectionID].relArtThumb2);
 		//$(".relArtThumb2").addClass(dataArticle[arraySelectionID].relArtThumbOverlay2);
 		$("#relArtThumbImg2").attr("src",dataArticle[arraySelectionID].relArtThumbImg2);
 		$("#relArtThumbDate2").text(dataArticle[arraySelectionID].relArtThumbDate2);
-		$("#relArtThumbDesc2").text(dataArticle[arraySelectionID].relArtThumbDesc2);
+		$("#relArtThumbDesc2").html(dataArticle[arraySelectionID].relArtThumbDesc2);
 		$("#relArtThumbSpeaker2").text(dataArticle[arraySelectionID].relArtThumbSpeaker2);
+		if($("#"+getPDFArticleID).hasClass("hidere"))
+		{
+			$("#overlayArticle .hideheading").hide();
+			$("#overlayArticle .hidecontent").hide();
+		}
+		else{
+			$("#overlayArticle .hideheading").show();
+			$("#overlayArticle .hidecontent").show();
+		}
 		ajaxFormSubmit(dataArticle[arraySelectionID].artCat,dataArticle[arraySelectionID].artMainHead);
 		homeVideoCtrl();
 	}
 	//optin form for jp
-	$("#artDownload").on("click",function(){
+	$("#artDownload,#VideoDownload,#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4").on("click",function(){
 		getRedirURL = $(this).attr("href");
 		$(this).removeAttr("href");
 		$(this).removeAttr("target");
@@ -607,9 +625,22 @@ $(document).ready(function(e) {
 			assignValues(decUserDetails);
 			submissionCount++;
 		}
+		/*if(submissionCount=1)
+		{
+			$('input:checkbox').prop('checked', false);
+		}*/
 		if(submissionCount<3)
 		{
 			$("#popupOverlayOptin").removeClass("hide");
+			$('input:checkbox').prop('checked', false);
+			$("#sizeofcompany").val("");
+			if(sizeofcompany == ""){
+				errMsg = errMsg +"sizeofcompany";
+				$("#sizeofcompany-jp").text("企業規模を選択してください");
+			}
+			else{
+				$("#sizeofcompany-jp").text(" ");
+			}
 		}
 		else{
 			var getUserDetails =getCookie("userDetails");
@@ -682,9 +713,11 @@ $(document).ready(function(e) {
 			document.cookie = "totalPDFDownloadVideo="+countA+";expires="+newdate+";path=/";
 			ajaxFormSubmit();
 	});
-	$("#artDownload").on("click",function(){
+	$("#artDownload #VideoDownload").on("click",function(){
 		var countA="";
 		var getClassName = $(this).attr("class");
+			var getTitle = $("#artMainHead").text();
+		var getCar = $("#artCat").text();
 		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
 			var getCommonLength = $(".pdf-doc-content").length;
 			for(var i=0;i<getCommonLength;i++)
@@ -700,14 +733,18 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalPDFDownloadArticle="+countA+";expires="+newdate+";path=/";
-			ajaxFormSubmit();
+			ajaxFormSubmit(getCar,getTitle);
 	});
 	//create cookie when clicking related articles
 	$("#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4").on("click",function(){
 		var countA="";
 		var getClassName = $(this).attr("class");
-		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
-			var getCommonLength = $(".related-articles .speaker-thumb .session-col-left").length;
+		var getElementID = $(this).attr("id");
+		var getArticleTitle = $("#"+getElementID+" p").text();
+		var getArticleCat = $("#"+getElementID+" h5").text();
+		//document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
+			//var getCommonLength = $(".related-articles .speaker-thumb .session-col-left").length;
+			var getCommonLength = dataArticle.length*4;
 			for(var i=0;i<getCommonLength;i++)
 			{
 				var countVall = getCookie("clicksRelatedArticle_"+i);
@@ -721,8 +758,9 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalClicksRelatedArticle="+countA+";expires="+newdate+";path=/";
-			ajaxFormSubmit();
+			ajaxFormSubmit(getArticleCat,getArticleTitle);
 	});
+	
 	$(".showVideo").on("click",function(){
 		$("#overlayVideo #videoPlayerURL").addClass("showVideoPlayer");
 		plenaryVideoPlay();
@@ -790,29 +828,45 @@ $(document).ready(function(e) {
 			var jobTitle = $("#jobTitle").val();						
 			var country = $("#country").val();
 			var comments = $("#comments").val();
-			var clickSrcTitle = $("#clickSrcTitle").val();
+			var lastname=$("#lstname").val();
+			var name=$("#name").val();
+            var clickSrcTitle = $("#clickSrcTitle").val();
 			var clickSrcCat = $("#clickSrcCat").val();
 			if(fname == ""){
 				errMsg = "fn";
-				$("#errfirstName").text("Enter your first name");
+				$("#errfirstName").text("名をご記入ください");
 			}
 			else{
 				$("#errfirstName").text(" ");
 			}
 			if(lname == ""){
 				errMsg = errMsg +"ln";
-				$("#errlastName").text("Enter your last name");
+				$("#errlastName").text("姓をご記入ください");
 			}
 			else{
 				$("#errlastName").text(" ");
 			}
+			if(lastname == ""){
+				errMsg = errMsg +"lname";
+				$("#errlastname").text("姓（フリガナ）をご記入ください");
+			}
+			else{
+				$("#errlastname").text(" ");
+			}
+			if(name == ""){
+				errMsg = errMsg +"name";
+				$("#errname").text("名（フリガナ）をご記入ください");
+			}
+			else{
+				$("#errname").text(" ");
+			}
 			if(email == ""){
 				errMsg = errMsg + "email";
-				$("#erremailAddress").text("Enter your Email address");
+				$("#erremailAddress").text("Eメールアドレスをご記入ください");
 			}
 			else if(!checkemail(email)){
 				errMsg = errMsg + "valid email";
-				$("#erremailAddress").text("Enter Valid Email address");
+				$("#erremailAddress").text("正しいEメールアドレスをご記入ください");
 			}
 			else{
 				$("#erremailAddress").text(" ");
@@ -824,21 +878,21 @@ $(document).ready(function(e) {
 			}
 			else if(!mobileph(busPhone)){
 				errMsg = errMsg +"ph valid";
-				$("#errbusPh").text("Enter Valid 10 Digit Phone Number");
+				$("#errbusPh").text("電話番号をご記入ください");
 			}
 			else{
 				$("#errbusPh").text(" ");
 			}
 			if(company == ""){
 				errMsg = errMsg +"company";
-				$("#errcompany").text("Enter your company name");
+				$("#errcompany").text("会社名をご記入ください");
 			}
 			else{
 				$("#errcompany").text(" ");
 			}
 			if(jobTitle == ""){
 				errMsg = errMsg +"jobTitle";
-				$("#errjobTitle").text("Enter your Job Title ");
+				$("#errjobTitle").text("部署名・役職をご記入ください");
 			}
 			else{
 				$("#errjobTitle").text(" ");
@@ -854,9 +908,9 @@ $(document).ready(function(e) {
 			if(errMsg == ""){
 				//console.log("success");
 				//var url ="//s2502.t.eloqua.com/e/f2?elqFormName=19Q2-APJ-ANZ-DTF-PostEvent-Investigation-Gate&elqSiteID=2502";
-				var data ="&firstName="+fname+"&lastName="+lname+"&emailAddress="+email+"&busPhone="+busPhone+"&company="+company+"&jobFunction1="+jobTitle+"&country="+country+"&clickSrcTitle="+clickSrcTitle+"&clickSrcCat="+clickSrcCat+"&region="+regionalUpdate+"&comments="+comments;
+				var data ="&firstName="+fname+"&lastName="+lname+"&emailAddress="+email+"&busPhone="+busPhone+"&company="+company+"&jobFunction1="+jobTitle+"&country="+country+"&clickSrcTitle="+clickSrcTitle+"&clickSrcCat="+clickSrcCat+"&region="+regionalUpdate+"&comments="+comments+"&lstname="+lastname+"&name="+name;
 				$.ajax({
-				url:"//s2502.t.eloqua.com/e/f2?elqFormName=FY19Q3-APJ-SEA-DTF-Replay-Contactus&elqSiteID=2502",
+				url:"//s2502.t.eloqua.com/e/f2?elqFormName=FY19Q3-APJ-JP-DTF-Replay-Contactus&elqSiteID=2502",
 				type: "POST",
 				data:data,
 				crossDomain: true,
@@ -898,9 +952,16 @@ $(document).ready(function(e) {
 			var clickSrcTitle = $("#clickSrcTitle-jp").val();
 			var clickSrcCat = $("#clickSrcCat-jp").val();
 			var dept = $("#department-jp").val();
+            var emailoptin = "";
+			var partner = "";
+			var emailin="";
+			var communication=$("#communication").val();
+			
+			
+			
 			if(fname == ""){
 				errMsg = "fn";
-				$("#errfirstName-jp").text("Enter your first name");
+				$("#errfirstName-jp").text("名をご記入ください");
 			}
 			else{
 				$("#errfirstName-jp").text(" ");
@@ -908,11 +969,11 @@ $(document).ready(function(e) {
 			
 			if(email == ""){
 				errMsg = errMsg + "email";
-				$("#erremailAddress-jp").text("Enter your Email address");
+				$("#erremailAddress-jp").text("Eメールアドレスをご記入ください");
 			}
 			else if(!checkemail(email)){
 				errMsg = errMsg + "valid email";
-				$("#erremailAddress-jp").text("Enter Valid Email address");
+				$("#erremailAddress-jp").text("正しいEメールアドレスをご記入ください");
 			}
 			else{
 				$("#erremailAddress-jp").text(" ");
@@ -924,98 +985,142 @@ $(document).ready(function(e) {
 			}
 			else if(!mobileph(busPhone)){
 				errMsg = errMsg +"ph valid";
-				$("#errbusPh-jp").text("Enter Valid 10 Digit Phone Number");
+				$("#errbusPh-jp").text("電話番号をご記入ください");
 			}
 			else{
 				$("#errbusPh-jp").text(" ");
 			}
 			if(company == ""){
 				errMsg = errMsg +"company";
-				$("#errcompany-jp").text("Enter your company name");
+				$("#errcompany-jp").text("会社名をご記入ください");
 			}
 			else{
 				$("#errcompany-jp").text(" ");
 			}
 			if(dept == ""){
 				errMsg = errMsg +"dept";
-				$("#errdepartment-jp").text("Enter your Department ");
+				$("#errdepartment-jp").text("部署をご記入ください");
 			}
 			else{
 				$("#errdepartment-jp").text(" ");
 			}
-			if(jobTitle == ""){
+			if(document.getElementById("optin-us").checked==false){		
+				//alert("test");
+				var optin="";
+				errMsg = errMsg +"optin";
+				$("#optin-jp").text("チェックマークをご記入ください。");	
+				
+				//errMsg = errMsg +"optin";
+				//$("#optin-jp").text("");
+			}
+			else{
+				var optins = $("#optin-us").val();
+					$("#optin-jp").text("");
+					
+			}
+			
+						/*if(jobTitle == ""){
 				errMsg = errMsg +"jobTitle";
 				$("#errjobTitle-jp").text("Enter your Job Title ");
 			}
 			else{
 				$("#errjobTitle-jp").text(" ");
-			}
+			}*/
 			if(prefecture == ""){
 				errMsg = errMsg +"prefecture";
-				$("#errentry_prefecture-jp").text("Enter your Prefecture ");
+				$("#errentry_prefecture-jp").text("都道府県をご記入ください");
 			}
 			else{
 				$("#errentry_prefecture-jp").text(" ");
 			}
 			if(zip == ""){
 				errMsg = errMsg +"zip";
-				$("#errzip-jp").text("Enter your Postal Code");
+				$("#errzip-jp").text("郵便番号をご記入ください");
 			}
 			else{
 				$("#errzip-jp").text(" ");
 			}
 			if(city == ""){
 				errMsg = errMsg +"city";
-				$("#errcity-jp").text("Enter your City");
+				$("#errcity-jp").text("市区郡をご記入ください");
 			}
 			else{
 				$("#errcity-jp").text(" ");
 			}
 			if(streetname == ""){
 				errMsg = errMsg +"streetname";
-				$("#errstreetname-jp").text("Enter your Street Name ");
+				$("#errstreetname-jp").text("町村番地名をご記入ください");
 			}
 			else{
 				$("#errstreetname-jp").text(" ");
 			}
-			if(buildingname == ""){
+		/*	if(buildingname == ""){
 				errMsg = errMsg +"buildingname";
 				$("#errbuildingname-jp").text("Enter your Building Name ");
 			}
 			else{
 				$("#errbuildingname-jp").text(" ");
-			}
-			if(fax1 == ""){
+			}*/
+			/*if(fax1 == ""){
 				errMsg = errMsg +"fax1";
 				$("#errfax1-jp").text("Enter your Fax Number");
 			}
 			else{
 				$("#errfax1-jp").text(" ");
-			}
+			}*/  
+			if(document.getElementById("emailin").checked==false)
+			{
+				document.getElementById("emailin").value="No";
+			var emailin=$("#emailin").val();
+				}
+				else{
+					document.getElementById("emailin").value="Yes";
+			var emailin=$("#emailin").val();
+					}
+					
+					if(document.getElementById("emailoptin").checked==false)
+			{
+				document.getElementById("emailoptin").value="No";
+			var emailoptin=$("#emailoptin").val();
+				}
+				else{
+					document.getElementById("emailoptin").value="Yes";
+			var emailoptin=$("#emailoptin").val();
+					}
+					if(document.getElementById("Partner").checked==false)
+			{
+				document.getElementById("Partner").value="No";
+			var partner=$("#Partner").val();
+				}
+				else{
+					document.getElementById("Partner").value="Yes";
+			var partner=$("#Partner").val();
+					}
+					
 			if(surname == ""){
 				errMsg = errMsg +"surname";
-				$("#errsurname-jp").text("Enter your Sur Name");
+				$("#errsurname-jp").text("姓をご記入ください");
 			}
 			else{
 				$("#errsurname-jp").text(" ");
 			}
 			if(surname2 == ""){
 				errMsg = errMsg +"surname2";
-				$("#errsurname-spelt-jp").text("Enter your Sur Name to be spelt out");
+				$("#errsurname-spelt-jp").text("姓（フリガナ）をご記入ください");
 			}
 			else{
 				$("#errsurname-spelt-jp").text(" ");
 			}
 			if(firstname2 == ""){
 				errMsg = errMsg +"firstname2";
-				$("#errfirstname-spelt-jp").text("Enter your First Name to be spelt out");
+				$("#errfirstname-spelt-jp").text("名（フリガナ）をご記入ください");
 			}
 			else{
 				$("#errfirstname-spelt-jp").text(" ");
 			}
 			if(sizeofcompany == ""){
 				errMsg = errMsg +"sizeofcompany";
-				$("#sizeofcompany-jp").text("Select your Size of company");
+				$("#sizeofcompany-jp").text("企業規模を選択してください");
 			}
 			else{
 				$("#sizeofcompany-jp").text(" ");
@@ -1030,26 +1135,27 @@ $(document).ready(function(e) {
 			}
 			if(errMsg == ""){
 				//alert(submissionCount);
-				var userDetails = fname+","+email+","+busPhone+","+company+","+jobTitle+","+dept+","+prefecture+","+zip+","+city+","+streetname+","+buildingname+","+fax1+","+surname+","+surname2+","+firstname2+","+sizeofcompany+","+country+","+clickSrcTitle+","+clickSrcCat+","+regionalUpdate+","+comments;
+				var userDetails = fname+","+email+","+busPhone+","+company+","+jobTitle+","+dept+","+prefecture+","+zip+","+city+","+streetname+","+buildingname+","+fax1+","+surname+","+surname2+","+firstname2+","+sizeofcompany+","+country+","+clickSrcTitle+","+clickSrcCat+","+regionalUpdate+","+comments+","+optins+","+emailoptin+","+partner+","+emailin+","+communication;
 				var encodeDetails = encodeURIComponent(userDetails);
 				document.cookie="userDetails="+encodeDetails+";expires="+newdate+";path=/";
-				formsubmitForJp(fname,email,busPhone,company,jobTitle,dept,prefecture,zip,city,streetname,buildingname,fax1,surname,surname2,firstname2,sizeofcompany,country,clickSrcTitle,clickSrcCat,regionalUpdate,comments);
+				formsubmitForJp(fname,email,busPhone,company,jobTitle,dept,prefecture,zip,city,streetname,buildingname,fax1,surname,surname2,firstname2,sizeofcompany,country,clickSrcTitle,clickSrcCat,regionalUpdate,comments,optins,emailoptin,partner,emailin,communication);
 				window.open(getRedirURL);
 				if(submissionCount<3){
-				$("#artDownload").attr("href",getRedirURL);
+				$("#artDownload,#VideoDownload").attr("href",getRedirURL);
+				
 				}
 			}
 			else{
 				return false;
 			}
 		});
-		function formsubmitForJp(fname,email,busPhone,company,jobTitle,dept,prefecture,zip,city,streetname,buildingname,fax1,surname,surname2,firstname2,sizeofcompany,country,clickSrcTitle,clickSrcCat,regionalUpdate,comments)
+		function formsubmitForJp(fname,email,busPhone,company,jobTitle,dept,prefecture,zip,city,streetname,buildingname,fax1,surname,surname2,firstname2,sizeofcompany,country,clickSrcTitle,clickSrcCat,regionalUpdate,comments,optins,emailoptin,partner,emailin,communication)
 		{
 				document.cookie = "downloadCtaClickCount="+submissionCount+";expires="+newdate+";path=/";
 				var faxCon = fax1;
-				var data ="&firstName="+fname+"&emailAddress="+email+"&busPhone="+busPhone+"&company="+company+"&jobFunction1="+jobTitle+"&department="+dept+"&country="+country+"&clickSrcTitle="+clickSrcTitle+"&clickSrcCat="+clickSrcCat+"&region="+regionalUpdate+"&comments="+comments+"&prefecture="+prefecture+"&zip="+zip+"&city="+city+"&streetname="+streetname+"&buildingname="+buildingname+"&surname="+surname+"&surname2="+surname2+"&firstname2="+firstname2+"&sizeofcompany="+sizeofcompany+"&fax="+faxCon;
+				var data ="&firstName="+fname+"&emailAddress="+email+"&busPhone="+busPhone+"&company="+company+"&jobFunction1="+jobTitle+"&department="+dept+"&country="+country+"&clickSrcTitle="+clickSrcTitle+"&clickSrcCat="+clickSrcCat+"&region="+regionalUpdate+"&comments="+comments+"&prefecture="+prefecture+"&zip="+zip+"&city="+city+"&streetname="+streetname+"&buildingname="+buildingname+"&surname="+surname+"&surname2="+surname2+"&firstname2="+firstname2+"&sizeofcompany="+sizeofcompany+"&fax="+faxCon+"&optin="+optins+"&emailoptin="+emailoptin+"&Partner="+partner+"&emailin="+emailin+"&communication="+communication;
 				$.ajax({
-				url:"//s2502.t.eloqua.com/e/f2?elqFormName=FY19Q3-APJ-JP-DTF-Replay-Contactus&elqSiteID=2502",
+				url:"//s2502.t.eloqua.com/e/f2?elqFormName=FY19Q3-APJ-JP-DTF-Replay-GatingForm&elqSiteID=2502",
 				type: "POST",
 				data:data,
 				crossDomain: true,
@@ -1101,4 +1207,13 @@ $(document).ready(function(e) {
 		var segment = pathArray[1];
 		return segment;
 	} 
+		
 });
+
+/*$(".callback").change(function(){
+	if($("this").is (":checked"))
+	{
+	$("this").val("Yes");
+	}
+	else{$("this").val("No");}
+	});*/
