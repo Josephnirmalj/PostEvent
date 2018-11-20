@@ -7,7 +7,7 @@ $(document).ready(function(e) {
 	//page load cookie for page view count , increase every page refresh
 	var getCookieOnload = getCookie("pageLoadView");
 	if(getCookieOnload == ""){
-		document.cookie = " ="+1+";expires="+newdate+";path=/";
+		document.cookie = "pageLoadView="+1+";expires="+newdate+";path=/";
 	}
 	else{
 		getCookieOnload++;
@@ -96,6 +96,7 @@ $(document).ready(function(e) {
 		var regionalUpdate ="";
 		var submissionCount ="";
 		var getRedirURL ="";
+		var getRedirID ="";
 		//assign country
 		if(window.location.href.indexOf("en-au") > -1) {
       		regionalUpdate = "Australia";
@@ -125,7 +126,7 @@ $(document).ready(function(e) {
 				myPlayer.catalog.load(video);
 
 				myPlayer.customEndscreen({
-				  "content": '<div class="endScreenVideo"><div class="article-buttons"><ul><li><a href="#" onclick="rewindArticles()"><button><i class="fa fa-repeat" aria-hidden="true"></i></i>Replay Video</button></a></li><li><button id="VideocontactUsPdf" onclick="contactus()"><a target="_blank"><i class="fa fa-phone"></i>Contact Us</a></button></li></ul></div></div>'
+				  "content": '<div class="endScreenVideo"><div class="article-buttons"><ul><li><a href="#" onclick="rewindArticles()"><button><i class="fa fa-repeat" aria-hidden="true"></i></i>もう一度見る</button></a></li><li><button id="VideocontactUsPdf" onclick="contactus()"><a target="_blank"><i class="fa fa-phone"></i>お問合せ</a></button></li></ul></div></div>'
 				    });
 				 });
 			});
@@ -236,65 +237,6 @@ $(document).ready(function(e) {
 					}
 				});
 			}
-			
-			$("#optinBtn").on("click",function(){
-			var videoCookie=getCookie("totalPDFDownloadVideo");
-			var articleCookie=getCookie("totalPDFDownloadArticle");
-			var viewVideoCookie=getCookie("totalShowVideo");
-			var relatedArticles=getCookie("totalClicksRelatedArticle");
-			var pageViewCount=getCookie("pageLoadView");
-			if(videoCookie == ""){
-				videoCookie=0;
-			}
-			if(articleCookie == ""){
-				articleCookie=0;
-			}
-			if(viewVideoCookie == ""){
-				viewVideoCookie=0;
-			}
-			if(relatedArticles == ""){
-				relatedArticles=0;
-			}
-				var errmsg="";
-				var email = $("#optinEmail").val();
-				var optin = $("#optin").val();
-				if(email == ""){
-					$("#errOptin").text("Enter Email");
-					errmsg='empty';
-				}
-				else if(!checkemail(email)){
-					$("#errOptin").text("Enter Valid Email");
-					errmsg=errmsg+"errmsg";
-				}
-				else{
-					$("#errOptin").text(" ");
-				}
-				if(document.getElementById("optin").checked == true){
-					optin=1;
-				}
-				if(errmsg == ""){
-					var url = "//s2502.t.eloqua.com/e/f2?elqFormName="+eloquaFormName+"&elqSiteID="+SiteID+"&";
-					var data="emailAddress="+email+"&optin="+optin+"&viewedVideos="+videoCookie+"&formSubmits="+articleCookie+"&webVisit="+pageViewCount+"&relatedArticles="+relatedArticles+"&region="+regionalUpdate;
-					$.ajax({
-				url:url,
-				type: "POST",
-				data:data,
-				crossDomain: true,
-				success:function(type) {
-					},
-				error: function (xhr, type, exception){
-					//alert("ajax error responsoe-"+type);
-					}
-				});
-
-					$("#popupOverlayOptin").addClass("hide");
-					document.cookie = "optinformSubmitted="+"yes"+";expires="+newdate+";path=/";
-				}
-				else{
-					return false;
-				}
-
-			});
 			//closing popup optin
 			$(".form-close-btn-opt").on("click",function(){
 				$("#popupOverlayOptin").addClass("hide");
@@ -333,6 +275,7 @@ $(document).ready(function(e) {
 		else if(activeMenu == "digitalMenu")
 			{
 				$(".category-title").removeClass("sessionHide");
+
 				$(".category-title").addClass("sessionHide");
 				$("#digitalTrans").addClass("sessionShow");
 				$("#digitalTrans").removeClass("sessionHide");
@@ -435,8 +378,8 @@ $(document).ready(function(e) {
 		var splitVideoID = getVideoArticleID.split("_");
 		var arraySelectionID = splitVideoID[1];
 		//video content popup from data js and var is datavideo
-		$("#clickSrcTitle").val(dataVideo[arraySelectionID].videoHead);
-		$("#clickSrcCat").val(dataVideo[arraySelectionID].videoCat);
+		$("#clickSrcTitle-jp").val(dataVideo[arraySelectionID].videoHead);
+		$("#clickSrcCat-jp").val(dataVideo[arraySelectionID].videoCat);
 		plenaryVideo(dataVideo[arraySelectionID].videoPlayerURL);
 		$("#showVideoThum").attr("src",dataVideo[arraySelectionID].showVideoThum);
 		$("#showVideoThum").removeClass();
@@ -446,7 +389,7 @@ $(document).ready(function(e) {
 		$("#videoHead").html(dataVideo[arraySelectionID].videoHead);
 		$("#videoDate").text(dataVideo[arraySelectionID].videoDate);
 		$("#videoContent").text(dataVideo[arraySelectionID].videoContent);
-		$("#VideoDownload").attr("href",dataVideo[arraySelectionID].VideoDownload);
+		$("#VideoDownload").attr("data-url",dataVideo[arraySelectionID].VideoDownload);
 		$("#VideoDownload").removeClass();
 		$("#VideoDownload").addClass(dataVideo[arraySelectionID].cookieForLead);
 		$(".VideoSpeakerName1").text(dataVideo[arraySelectionID].VideoSpeakerName1);
@@ -491,7 +434,7 @@ $(document).ready(function(e) {
 		else{  
 			$("#VideoDownload").show();
 		}
-		ajaxFormSubmit(dataVideo[arraySelectionID].videoCat,dataVideo[arraySelectionID].videoHead);
+		//ajaxFormSubmit(dataVideo[arraySelectionID].videoCat,dataVideo[arraySelectionID].videoHead);
 		homeVideoCtrl();
 		//content popup
 	}
@@ -539,8 +482,8 @@ $(document).ready(function(e) {
 		}
 		var splitPdfID = getPDFArticleID.split("_");
 		var arraySelectionID = splitPdfID[1];
-		$("#clickSrcTitle").val(dataArticle[arraySelectionID].artMainHead);
-		$("#clickSrcCat").val(dataArticle[arraySelectionID].artCat);
+		$("#clickSrcTitle-jp").val(dataArticle[arraySelectionID].artMainHead);
+		$("#clickSrcCat-jp").val(dataArticle[arraySelectionID].artCat);
 		$(".ArtFBUrl").attr("href",dataArticle[arraySelectionID].ArtFBUrl);
 		$(".ArtTwitterUrl").attr("href",dataArticle[arraySelectionID].ArtTwitterUrl);
 		$(".ArtLinkedinUrl").attr("href",dataArticle[arraySelectionID].ArtLinkedinUrl);
@@ -553,28 +496,28 @@ $(document).ready(function(e) {
 		$("#artMainHead").html(dataArticle[arraySelectionID].artMainHead);
 		$("#artDate").text(dataArticle[arraySelectionID].artDate);
 		$("#artMainContent").html(dataArticle[arraySelectionID].artMainContent);
-		$("#artDownload").attr("href",dataArticle[arraySelectionID].artDownload);
+		$("#artDownload").attr("data-url",dataArticle[arraySelectionID].artDownload);
 		$("#artDownload").removeClass();
 		$("#artDownload").addClass(dataArticle[arraySelectionID].cookieForLead);
-		$("#relArtIconUrl1").attr("href",dataArticle[arraySelectionID].relArtIconUrl1);
+		$("#relArtIconUrl1").attr("data-url",dataArticle[arraySelectionID].relArtIconUrl1);
 		$("#relArtIconUrl1").removeClass();
 		$("#relArtIconUrl1").addClass(dataArticle[arraySelectionID].relArtClicksCookie1);
 		$("#relArtIconImg1").attr("src",dataArticle[arraySelectionID].relArtIconImg1);
 		$("#relArtIconTitle1").text(dataArticle[arraySelectionID].relArtIconTitle1);
 		$("#relArtIconDecs1").text(dataArticle[arraySelectionID].relArtIconDecs1);
-		$("#relArtIconUrl2").attr("href",dataArticle[arraySelectionID].relArtIconUrl2);
+		$("#relArtIconUrl2").attr("data-url",dataArticle[arraySelectionID].relArtIconUrl2);
 		$("#relArtIconUrl2").removeClass();
 		$("#relArtIconUrl2").addClass(dataArticle[arraySelectionID].relArtClicksCookie2);
 		$("#relArtIconImg2").attr("src",dataArticle[arraySelectionID].relArtIconImg2);
 		$("#relArtIconTitle2").text(dataArticle[arraySelectionID].relArtIconTitle2);
 		$("#relArtIconDecs2").text(dataArticle[arraySelectionID].relArtIconDecs2);
-		$("#relArtIconUrl3").attr("href",dataArticle[arraySelectionID].relArtIconUrl3);
+		$("#relArtIconUrl3").attr("data-url",dataArticle[arraySelectionID].relArtIconUrl3);
 		$("#relArtIconUrl3").removeClass();
 		$("#relArtIconUrl3").addClass(dataArticle[arraySelectionID].relArtClicksCookie3);
 		$("#relArtIconImg3").attr("src",dataArticle[arraySelectionID].relArtIconImg3);
 		$("#relArtIconTitle3").text(dataArticle[arraySelectionID].relArtIconTitle3);
 		$("#relArtIconDecs3").text(dataArticle[arraySelectionID].relArtIconDecs3);
-		$("#relArtIconUrl4").attr("href",dataArticle[arraySelectionID].relArtIconUrl4);
+		$("#relArtIconUrl4").attr("data-url",dataArticle[arraySelectionID].relArtIconUrl4);
 		$("#relArtIconUrl4").removeClass();
 		$("#relArtIconUrl4").addClass(dataArticle[arraySelectionID].relArtClicksCookie4);
 		$("#relArtIconImg4").attr("src",dataArticle[arraySelectionID].relArtIconImg4);
@@ -601,76 +544,10 @@ $(document).ready(function(e) {
 			$("#overlayArticle .hideheading").show();
 			$("#overlayArticle .hidecontent").show();
 		}
-		ajaxFormSubmit(dataArticle[arraySelectionID].artCat,dataArticle[arraySelectionID].artMainHead);
+		//ajaxFormSubmit(dataArticle[arraySelectionID].artCat,dataArticle[arraySelectionID].artMainHead);
 		homeVideoCtrl();
 	}
-	//optin form for jp
-	$("#artDownload,#VideoDownload,#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4").on("click",function(){
-		getRedirURL = $(this).attr("href");
-		$(this).removeAttr("href");
-		$(this).removeAttr("target");
-		$(this).attr("href","javascript:void(0)");
-		$("#popupOverlayOptin form").show();
-		$("#popupOverlayOptin .formSuccessMessage").hide();
-		formJp();
-	});
-	function formJp(){
-		submissionCount = getCookie("downloadCtaClickCount");
-		if(submissionCount ==""){
-			submissionCount=1;
-		}
-		else{
-			var getUserDetails =getCookie("userDetails");
-			var decUserDetails = decodeURIComponent(getUserDetails);
-			assignValues(decUserDetails);
-			submissionCount++;
-		}
-		/*if(submissionCount=1)
-		{
-			$('input:checkbox').prop('checked', false);
-		}*/
-		if(submissionCount<3)
-		{
-			$("#popupOverlayOptin").removeClass("hide");
-			$('input:checkbox').prop('checked', false);
-			$("#sizeofcompany").val("");
-			if(sizeofcompany == ""){
-				errMsg = errMsg +"sizeofcompany";
-				$("#sizeofcompany-jp").text("企業規模を選択してください");
-			}
-			else{
-				$("#sizeofcompany-jp").text(" ");
-			}
-		}
-		else{
-			var getUserDetails =getCookie("userDetails");
-			var decUserDetails = decodeURIComponent(getUserDetails);
-			assignValues(decUserDetails);
-			$("#btn-submit-jp").click();
-			$("#popupOverlayOptin").addClass("hide");
-		}
-	}
-	function assignValues(decUserDetails){
-		var splitArray = decUserDetails.split(",");
-		console.log(splitArray);
-		$("#firstName-jp").val(splitArray[0]);
-		$("#emailAddress-jp").val(splitArray[1]);
-		$("#busPh-jp").val(splitArray[2]);
-		$("#company-jp").val(splitArray[3]);
-		$("#jobTitle-jp").val(splitArray[4]);
-		$("#department-jp").val(splitArray[5]);
-		$("#entry_prefecture").val(splitArray[6]);
-		$("#entry_zip1").val(splitArray[7]);
-		$("#city").val(splitArray[8]);
-		$("#streetname").val(splitArray[9]);
-		$("#buildingname").val(splitArray[10]);
-		$("#fax1-jp").val(splitArray[11]);
-		$("#surname").val(splitArray[12]);
-		$("#surname-spelt").val(splitArray[13]);
-		$("#firstname-spelt").val(splitArray[14]);
-		$("#sizeofcompany").val(splitArray[16])
-		$("#comments-jp").val(splitArray[22]);
-	}
+	
 	//create cookie on pdf download
 	$("#showVideoThum").on("click",function(){
 		var countA="";
@@ -693,9 +570,19 @@ $(document).ready(function(e) {
 			document.cookie = "totalShowVideo="+countA+";expires="+newdate+";path=/";
 			ajaxFormSubmit();
 	});
-	$("#VideoDownload").on("click",function(){
+	$("#VideoDownload").on("click",function(e){
+		e.preventDefault();
+		//e.stopPropagation();
+		getRedirID = $(this).attr("id");
+		getRedirURL = $(this).attr("data-url");
+		/*$(this).attr("href","javascript:void(0)");
+		$(this).removeAttr("href");
+		$(this).removeAttr("target");*/
+		formJp();
 		var countA="";
 		var getClassName = $(this).attr("class");
+		var getTitle = $("#videoHead").text();
+		var getCar = $("#videoCat").text();
 		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
 			var getCommonLength =  $(".video-doc-content").length;
 			for(var i=0;i<getCommonLength;i++)
@@ -711,12 +598,20 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalPDFDownloadVideo="+countA+";expires="+newdate+";path=/";
-			ajaxFormSubmit();
+			formJp(getArticleCat,getArticleTitle);
+			//ajaxFormSubmit(getCar,getTitle);
 	});
-	$("#artDownload #VideoDownload").on("click",function(){
+	$("#artDownload").on("click",function(e){
+		e.preventDefault();
+		//e.stopPropagation();
+		getRedirID = $(this).attr("id");
+		getRedirURL = $(this).attr("data-url");
+		/*$(this).attr("href","javascript:void(0)");
+		$(this).removeAttr("href");
+		$(this).removeAttr("target");*/
 		var countA="";
 		var getClassName = $(this).attr("class");
-			var getTitle = $("#artMainHead").text();
+		var getTitle = $("#artMainHead").text();
 		var getCar = $("#artCat").text();
 		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
 			var getCommonLength = $(".pdf-doc-content").length;
@@ -733,17 +628,23 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalPDFDownloadArticle="+countA+";expires="+newdate+";path=/";
-			ajaxFormSubmit(getCar,getTitle);
+			formJp(getCar,getTitle);
+			//ajaxFormSubmit(getCar,getTitle);
 	});
 	//create cookie when clicking related articles
-	$("#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4").on("click",function(){
+	$("#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4").on("click",function(e){
+		e.preventDefault();
+		//e.stopPropagation();
+		getRedirID = $(this).attr("id");
+		getRedirURL = $(this).attr("data-url");
+		/*$(this).attr("href","javascript:void(0)");
+		$(this).removeAttr("href");
+		$(this).removeAttr("target");*/
 		var countA="";
 		var getClassName = $(this).attr("class");
 		var getElementID = $(this).attr("id");
 		var getArticleTitle = $("#"+getElementID+" p").text();
 		var getArticleCat = $("#"+getElementID+" h5").text();
-		//document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
-			//var getCommonLength = $(".related-articles .speaker-thumb .session-col-left").length;
 			var getCommonLength = dataArticle.length*4;
 			for(var i=0;i<getCommonLength;i++)
 			{
@@ -758,9 +659,62 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalClicksRelatedArticle="+countA+";expires="+newdate+";path=/";
-			ajaxFormSubmit(getArticleCat,getArticleTitle);
+			formJp(getArticleCat,getArticleTitle);
+			//ajaxFormSubmit(getArticleCat,getArticleTitle);
 	});
-	
+	//optin form for jp
+	function formJp(getArticleCat,getArticleTitle){
+		submissionCount = getCookie("downloadCtaClickCount");
+		if(submissionCount ==""){
+			submissionCount=1;
+		}
+		else{
+			var getUserDetails =getCookie("userDetails");
+			var decUserDetails = decodeURIComponent(getUserDetails);
+			assignValues(decUserDetails,getArticleCat,getArticleTitle);
+			submissionCount++;
+		}
+		//alert(submissionCount);
+		if(submissionCount<3)
+		{
+			$("#popupOverlayOptin form").show();
+			$("#popupOverlayOptin .formSuccessMessage").hide();
+			$("#popupOverlayOptin").removeClass("hide");
+			$('input:checkbox').prop('checked', false);
+		}
+		else{
+			var getUserDetails =getCookie("userDetails");
+			var decUserDetails = decodeURIComponent(getUserDetails);
+			assignValues(decUserDetails,getArticleCat,getArticleTitle);
+			$("#popupOverlayOptin").addClass("hide");
+			$("#optin-us").prop("checked",true);
+			$("#btn-submit-jp").click();
+		}
+	}
+	function assignValues(decUserDetails,getArticleCat,getArticleTitle){
+		var splitArray = decUserDetails.split(",");
+		console.log(splitArray);
+		$("#firstName-jp").val(splitArray[0]);
+		$("#emailAddress-jp").val(splitArray[1]);
+		$("#busPh-jp").val(splitArray[2]);
+		$("#company-jp").val(splitArray[3]);
+		$("#jobTitle-jp").val(splitArray[4]);
+		$("#department-jp").val(splitArray[5]);
+		$("#entry_prefecture").val(splitArray[6]);
+		$("#entry_zip1").val(splitArray[7]);
+		$("#city").val(splitArray[8]);
+		$("#streetname").val(splitArray[9]);
+		$("#buildingname").val(splitArray[10]);
+		$("#fax1-jp").val(splitArray[11]);
+		$("#surname").val(splitArray[12]);
+		$("#surname-spelt").val(splitArray[13]);
+		$("#firstname-spelt").val(splitArray[14]);
+		$("#sizeofcompany").val(splitArray[15]);
+		console.log("company-"+splitArray[15]);
+		$("#comments-jp").val(splitArray[22]);
+		$("#clickSrcTitle-jp").val(getArticleTitle);
+		$("#clickSrcCat-jp").val(getArticleCat);
+	}
 	$(".showVideo").on("click",function(){
 		$("#overlayVideo #videoPlayerURL").addClass("showVideoPlayer");
 		plenaryVideoPlay();
@@ -777,6 +731,7 @@ $(document).ready(function(e) {
 			$(".right-staic-bar").addClass("mobileLayoutAutoHeight");
 		}
 	});
+
 	//scroll to top for related articles
 		$('.speaker-thumb .pdf-doc-content,.pdf-doc-content').on("click",function(){
 			$("#overlayArticle").animate({ scrollTop: 0 }, 600);
@@ -946,7 +901,7 @@ $(document).ready(function(e) {
 			var surname = $("#surname").val();
 			var surname2 = $("#surname-spelt").val();
 			var firstname2 = $("#firstname-spelt").val();
-			var sizeofcompany = $("#sizeofcompany").val();	
+			var sizeofcompany = $("#sizeofcompany").val();
 			var country = $("#country-jp").val();
 			var comments = $("#comments-jp").val();
 			var clickSrcTitle = $("#clickSrcTitle-jp").val();
@@ -956,9 +911,6 @@ $(document).ready(function(e) {
 			var partner = "";
 			var emailin="";
 			var communication=$("#communication").val();
-			
-			
-			
 			if(fname == ""){
 				errMsg = "fn";
 				$("#errfirstName-jp").text("名をご記入ください");
@@ -1005,27 +957,14 @@ $(document).ready(function(e) {
 				$("#errdepartment-jp").text(" ");
 			}
 			if(document.getElementById("optin-us").checked==false){		
-				//alert("test");
 				var optin="";
 				errMsg = errMsg +"optin";
 				$("#optin-jp").text("チェックマークをご記入ください。");	
-				
-				//errMsg = errMsg +"optin";
-				//$("#optin-jp").text("");
 			}
 			else{
 				var optins = $("#optin-us").val();
 					$("#optin-jp").text("");
-					
 			}
-			
-						/*if(jobTitle == ""){
-				errMsg = errMsg +"jobTitle";
-				$("#errjobTitle-jp").text("Enter your Job Title ");
-			}
-			else{
-				$("#errjobTitle-jp").text(" ");
-			}*/
 			if(prefecture == ""){
 				errMsg = errMsg +"prefecture";
 				$("#errentry_prefecture-jp").text("都道府県をご記入ください");
@@ -1054,49 +993,24 @@ $(document).ready(function(e) {
 			else{
 				$("#errstreetname-jp").text(" ");
 			}
-		/*	if(buildingname == ""){
-				errMsg = errMsg +"buildingname";
-				$("#errbuildingname-jp").text("Enter your Building Name ");
+			if(document.getElementById("emailoptin").checked==false)
+			{
+			document.getElementById("emailoptin").value="No";
+			var emailoptin=$("#emailoptin").val();
 			}
 			else{
-				$("#errbuildingname-jp").text(" ");
-			}*/
-			/*if(fax1 == ""){
-				errMsg = errMsg +"fax1";
-				$("#errfax1-jp").text("Enter your Fax Number");
+			document.getElementById("emailoptin").value="Yes";
+			var emailoptin=$("#emailoptin").val();
+			}
+			if(document.getElementById("Partner").checked==false)
+			{
+			document.getElementById("Partner").value="No";
+			var partner=$("#Partner").val();
 			}
 			else{
-				$("#errfax1-jp").text(" ");
-			}*/  
-			if(document.getElementById("emailin").checked==false)
-			{
-				document.getElementById("emailin").value="No";
-			var emailin=$("#emailin").val();
-				}
-				else{
-					document.getElementById("emailin").value="Yes";
-			var emailin=$("#emailin").val();
-					}
-					
-					if(document.getElementById("emailoptin").checked==false)
-			{
-				document.getElementById("emailoptin").value="No";
-			var emailoptin=$("#emailoptin").val();
-				}
-				else{
-					document.getElementById("emailoptin").value="Yes";
-			var emailoptin=$("#emailoptin").val();
-					}
-					if(document.getElementById("Partner").checked==false)
-			{
-				document.getElementById("Partner").value="No";
+			document.getElementById("Partner").value="Yes";
 			var partner=$("#Partner").val();
-				}
-				else{
-					document.getElementById("Partner").value="Yes";
-			var partner=$("#Partner").val();
-					}
-					
+			}		
 			if(surname == ""){
 				errMsg = errMsg +"surname";
 				$("#errsurname-jp").text("姓をご記入ください");
@@ -1134,16 +1048,15 @@ $(document).ready(function(e) {
 				$("#errcountry-jp").text(" ");
 			}
 			if(errMsg == ""){
-				//alert(submissionCount);
 				var userDetails = fname+","+email+","+busPhone+","+company+","+jobTitle+","+dept+","+prefecture+","+zip+","+city+","+streetname+","+buildingname+","+fax1+","+surname+","+surname2+","+firstname2+","+sizeofcompany+","+country+","+clickSrcTitle+","+clickSrcCat+","+regionalUpdate+","+comments+","+optins+","+emailoptin+","+partner+","+emailin+","+communication;
 				var encodeDetails = encodeURIComponent(userDetails);
 				document.cookie="userDetails="+encodeDetails+";expires="+newdate+";path=/";
 				formsubmitForJp(fname,email,busPhone,company,jobTitle,dept,prefecture,zip,city,streetname,buildingname,fax1,surname,surname2,firstname2,sizeofcompany,country,clickSrcTitle,clickSrcCat,regionalUpdate,comments,optins,emailoptin,partner,emailin,communication);
 				window.open(getRedirURL);
-				if(submissionCount<3){
-				$("#artDownload,#VideoDownload").attr("href",getRedirURL);
-				
-				}
+				$("#"+getRedirID).attr("href",getRedirURL);
+				$("#popupOverlayOptin form").hide(500);
+				$("#popupOverlayOptin .formSuccessMessage").show(500);
+				//alert(getRedirID);
 			}
 			else{
 				return false;
@@ -1151,18 +1064,37 @@ $(document).ready(function(e) {
 		});
 		function formsubmitForJp(fname,email,busPhone,company,jobTitle,dept,prefecture,zip,city,streetname,buildingname,fax1,surname,surname2,firstname2,sizeofcompany,country,clickSrcTitle,clickSrcCat,regionalUpdate,comments,optins,emailoptin,partner,emailin,communication)
 		{
+			//alert("submit");
+			var videoCookie=getCookie("totalPDFDownloadVideo");
+			var articleCookie=getCookie("totalPDFDownloadArticle");
+			var viewVideoCookie=getCookie("totalShowVideo");
+			var relatedArticles=getCookie("totalClicksRelatedArticle");
+			var pageViewCount=getCookie("pageLoadView");
+			if(videoCookie == ""){
+				videoCookie=0;
+			}
+			if(articleCookie == ""){
+				articleCookie=0;
+			}
+			if(viewVideoCookie == ""){
+				viewVideoCookie=0;
+			}
+			if(relatedArticles == ""){
+				relatedArticles=0;
+			}
+			var totalArticlesClicked = parseInt(videoCookie)+parseInt(articleCookie)+parseInt(viewVideoCookie)+parseInt(relatedArticles);
+			var totalPDFDownlaod = parseInt(videoCookie)+parseInt(articleCookie)+parseInt(relatedArticles);
 				document.cookie = "downloadCtaClickCount="+submissionCount+";expires="+newdate+";path=/";
 				var faxCon = fax1;
-				var data ="&firstName="+fname+"&emailAddress="+email+"&busPhone="+busPhone+"&company="+company+"&jobFunction1="+jobTitle+"&department="+dept+"&country="+country+"&clickSrcTitle="+clickSrcTitle+"&clickSrcCat="+clickSrcCat+"&region="+regionalUpdate+"&comments="+comments+"&prefecture="+prefecture+"&zip="+zip+"&city="+city+"&streetname="+streetname+"&buildingname="+buildingname+"&surname="+surname+"&surname2="+surname2+"&firstname2="+firstname2+"&sizeofcompany="+sizeofcompany+"&fax="+faxCon+"&optin="+optins+"&emailoptin="+emailoptin+"&Partner="+partner+"&emailin="+emailin+"&communication="+communication;
+				var data = "&assetName="+clickSrcTitle+"&assetCatogrey="+clickSrcCat+"&viewedVideos="+viewVideoCookie+"&formSubmits="+totalPDFDownlaod+"&webVisit="+pageViewCount+"&relatedArticles="+relatedArticles+"&region="+regionalUpdate+"&firstName="+fname+"&emailAddress="+email+"&busPhone="+busPhone+"&company="+company+"&jobFunction1="+jobTitle+"&department="+dept+"&country="+country+"&comments="+comments+"&prefecture="+prefecture+"&zip="+zip+"&city="+city+"&streetname="+streetname+"&buildingname="+buildingname+"&surname="+surname+"&surname2="+surname2+"&firstname2="+firstname2+"&sizeofcompany="+sizeofcompany+"&fax="+faxCon+"&optin="+optins+"&emailoptin="+emailoptin+"&Partner="+partner+"&emailin="+emailin+"&communication="+communication;
 				$.ajax({
-				url:"//s2502.t.eloqua.com/e/f2?elqFormName=FY19Q3-APJ-JP-DTF-Replay-GatingForm&elqSiteID=2502",
+				url:"//s2502.t.eloqua.com/e/f2?elqFormName="+eloquaFormName+"&elqSiteID=2502",
 				type: "POST",
 				data:data,
 				crossDomain: true,
 				complete: function(msg) 
 				{
-					$("#popupOverlayOptin form").hide(500);
-					$("#popupOverlayOptin .formSuccessMessage").show(500);
+					
 				},
 				error: function(xhr, textS, resp) {
 					//console.log("Error ajax");		
@@ -1209,11 +1141,3 @@ $(document).ready(function(e) {
 	} 
 		
 });
-
-/*$(".callback").change(function(){
-	if($("this").is (":checked"))
-	{
-	$("this").val("Yes");
-	}
-	else{$("this").val("No");}
-	});*/
