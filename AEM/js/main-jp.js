@@ -551,8 +551,10 @@ $(document).ready(function(e) {
 	//create cookie on pdf download
 	$("#showVideoThum").on("click",function(){
 		var countA="";
+		getRedirID = $(this).attr("id");
 		var getClassName = $(this).attr("class");
-		//var splitClass = getClassName.split(" ");
+		var getArticleTitle = $("#videoHead").text();
+		var getArticleCat = $("#videoCat").text();
 		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
 			var getCommonLength =  $(".video-doc-content").length;
 			for(var i=0;i<getCommonLength;i++)
@@ -568,21 +570,16 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalShowVideo="+countA+";expires="+newdate+";path=/";
-			ajaxFormSubmit();
+			formJp(getArticleCat,getArticleTitle);
 	});
 	$("#VideoDownload").on("click",function(e){
 		e.preventDefault();
-		//e.stopPropagation();
 		getRedirID = $(this).attr("id");
 		getRedirURL = $(this).attr("data-url");
-		/*$(this).attr("href","javascript:void(0)");
-		$(this).removeAttr("href");
-		$(this).removeAttr("target");*/
-		formJp();
 		var countA="";
 		var getClassName = $(this).attr("class");
-		var getTitle = $("#videoHead").text();
-		var getCar = $("#videoCat").text();
+		var getArticleTitle = $("#videoHead").text();
+		var getArticleCat = $("#videoCat").text();
 		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
 			var getCommonLength =  $(".video-doc-content").length;
 			for(var i=0;i<getCommonLength;i++)
@@ -599,16 +596,11 @@ $(document).ready(function(e) {
 			}
 			document.cookie = "totalPDFDownloadVideo="+countA+";expires="+newdate+";path=/";
 			formJp(getArticleCat,getArticleTitle);
-			//ajaxFormSubmit(getCar,getTitle);
 	});
 	$("#artDownload").on("click",function(e){
 		e.preventDefault();
-		//e.stopPropagation();
 		getRedirID = $(this).attr("id");
 		getRedirURL = $(this).attr("data-url");
-		/*$(this).attr("href","javascript:void(0)");
-		$(this).removeAttr("href");
-		$(this).removeAttr("target");*/
 		var countA="";
 		var getClassName = $(this).attr("class");
 		var getTitle = $("#artMainHead").text();
@@ -629,23 +621,19 @@ $(document).ready(function(e) {
 			}
 			document.cookie = "totalPDFDownloadArticle="+countA+";expires="+newdate+";path=/";
 			formJp(getCar,getTitle);
-			//ajaxFormSubmit(getCar,getTitle);
 	});
 	//create cookie when clicking related articles
 	$("#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4").on("click",function(e){
 		e.preventDefault();
-		//e.stopPropagation();
 		getRedirID = $(this).attr("id");
 		getRedirURL = $(this).attr("data-url");
-		/*$(this).attr("href","javascript:void(0)");
-		$(this).removeAttr("href");
-		$(this).removeAttr("target");*/
 		var countA="";
 		var getClassName = $(this).attr("class");
 		var getElementID = $(this).attr("id");
 		var getArticleTitle = $("#"+getElementID+" p").text();
 		var getArticleCat = $("#"+getElementID+" h5").text();
-			var getCommonLength = dataArticle.length*4;
+		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
+		var getCommonLength = dataArticle.length*4;
 			for(var i=0;i<getCommonLength;i++)
 			{
 				var countVall = getCookie("clicksRelatedArticle_"+i);
@@ -660,7 +648,6 @@ $(document).ready(function(e) {
 			}
 			document.cookie = "totalClicksRelatedArticle="+countA+";expires="+newdate+";path=/";
 			formJp(getArticleCat,getArticleTitle);
-			//ajaxFormSubmit(getArticleCat,getArticleTitle);
 	});
 	//optin form for jp
 	function formJp(getArticleCat,getArticleTitle){
@@ -674,7 +661,6 @@ $(document).ready(function(e) {
 			assignValues(decUserDetails,getArticleCat,getArticleTitle);
 			submissionCount++;
 		}
-		//alert(submissionCount);
 		if(submissionCount<3)
 		{
 			$("#popupOverlayOptin form").show();
@@ -715,10 +701,7 @@ $(document).ready(function(e) {
 		$("#clickSrcTitle-jp").val(getArticleTitle);
 		$("#clickSrcCat-jp").val(getArticleCat);
 	}
-	$(".showVideo").on("click",function(){
-		$("#overlayVideo #videoPlayerURL").addClass("showVideoPlayer");
-		plenaryVideoPlay();
-	});
+
 	$(".close-btn").on("click",function(){
 		plenaryVideoPause();
 		window.history.replaceState({}, document.title, "#" + "");
@@ -1052,10 +1035,19 @@ $(document).ready(function(e) {
 				var encodeDetails = encodeURIComponent(userDetails);
 				document.cookie="userDetails="+encodeDetails+";expires="+newdate+";path=/";
 				formsubmitForJp(fname,email,busPhone,company,jobTitle,dept,prefecture,zip,city,streetname,buildingname,fax1,surname,surname2,firstname2,sizeofcompany,country,clickSrcTitle,clickSrcCat,regionalUpdate,comments,optins,emailoptin,partner,emailin,communication);
-				window.open(getRedirURL);
-				$("#"+getRedirID).attr("href",getRedirURL);
-				$("#popupOverlayOptin form").hide(500);
-				$("#popupOverlayOptin .formSuccessMessage").show(500);
+				if(getRedirID !="showVideoThum"){
+					window.open(getRedirURL);
+					$("#"+getRedirID).attr("href",getRedirURL);	
+					$("#popupOverlayOptin form").hide(500);
+					$("#popupOverlayOptin .formSuccessMessage").show(500);
+				}
+				else{
+					$("#popupOverlayOptin form").hide();
+					$("#popupOverlayOptin .formSuccessMessage").hide();
+					$(".form-close-btn-opt").click();
+					$("#overlayVideo #videoPlayerURL").addClass("showVideoPlayer");
+					plenaryVideoPlay();
+				}
 				//alert(getRedirID);
 			}
 			else{
