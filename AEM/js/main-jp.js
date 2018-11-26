@@ -57,11 +57,9 @@ $(document).ready(function(e) {
 	$(".overlayDell").css("height",getWindowHeight - (navBarHeight+(getHeaderHeight+getStandardNavBarHeight)));
 	if(getWindowWidth<992){
 		$(".overlayDell").css("top",(getHeaderHeight+getStandardNavBarHeight));
-		
 	}
 	if(getWindowWidth<768){
 		$(".overlayDell").css("height",getWindowHeight - (mobNavBarHeight+getHeaderHeight+getStandardNavBarHeight));
-
 	}
 
 	$( window ).resize(function() {
@@ -380,6 +378,8 @@ $(document).ready(function(e) {
 		//video content popup from data js and var is datavideo
 		$("#clickSrcTitle-jp").val(dataVideo[arraySelectionID].videoHead);
 		$("#clickSrcCat-jp").val(dataVideo[arraySelectionID].videoCat);
+		$("#clickSrcTitle").val(dataVideo[arraySelectionID].videoHead);
+		$("#clickSrcCat").val(dataVideo[arraySelectionID].videoCat);
 		plenaryVideo(dataVideo[arraySelectionID].videoPlayerURL);
 		$("#showVideoThum").attr("src",dataVideo[arraySelectionID].showVideoThum);
 		$("#showVideoThum").removeClass();
@@ -484,6 +484,8 @@ $(document).ready(function(e) {
 		var arraySelectionID = splitPdfID[1];
 		$("#clickSrcTitle-jp").val(dataArticle[arraySelectionID].artMainHead);
 		$("#clickSrcCat-jp").val(dataArticle[arraySelectionID].artCat);
+		$("#clickSrcTitle").val(dataArticle[arraySelectionID].artMainHead);
+		$("#clickSrcCat").val(dataArticle[arraySelectionID].artCat);
 		$(".ArtFBUrl").attr("href",dataArticle[arraySelectionID].ArtFBUrl);
 		$(".ArtTwitterUrl").attr("href",dataArticle[arraySelectionID].ArtTwitterUrl);
 		$(".ArtLinkedinUrl").attr("href",dataArticle[arraySelectionID].ArtLinkedinUrl);
@@ -570,7 +572,8 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalShowVideo="+countA+";expires="+newdate+";path=/";
-			formJp(getArticleCat,getArticleTitle);
+			getClassName ="showForm";
+			formJp(getArticleCat,getArticleTitle,getClassName);
 	});
 	$("#VideoDownload").on("click",function(e){
 		e.preventDefault();
@@ -595,7 +598,8 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalPDFDownloadVideo="+countA+";expires="+newdate+";path=/";
-			formJp(getArticleCat,getArticleTitle);
+			getClassName ="showForm";
+			formJp(getArticleCat,getArticleTitle,getClassName);
 	});
 	$("#artDownload").on("click",function(e){
 		e.preventDefault();
@@ -620,13 +624,15 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalPDFDownloadArticle="+countA+";expires="+newdate+";path=/";
-			formJp(getCar,getTitle);
+			getClassName ="showForm";
+			formJp(getCar,getTitle,getClassName);
 	});
 	//create cookie when clicking related articles
 	$("#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4").on("click",function(e){
 		e.preventDefault();
 		getRedirID = $(this).attr("id");
 		getRedirURL = $(this).attr("data-url");
+		var relatedArticlesForm = "";
 		var countA="";
 		var getClassName = $(this).attr("class");
 		var getElementID = $(this).attr("id");
@@ -647,10 +653,16 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalClicksRelatedArticle="+countA+";expires="+newdate+";path=/";
-			formJp(getArticleCat,getArticleTitle);
+			if(getClassName == "clicksRelatedArticle_7"){
+				getClassName ="showForm";
+			}
+			if(getClassName == "clicksRelatedArticle_39"){
+				getClassName ="showForm";
+			}
+			formJp(getArticleCat,getArticleTitle,getClassName);
 	});
 	//optin form for jp
-	function formJp(getArticleCat,getArticleTitle){
+	function formJp(getArticleCat,getArticleTitle,getClassName){
 		submissionCount = getCookie("downloadCtaClickCount");
 		if(submissionCount ==""){
 			submissionCount=1;
@@ -658,28 +670,43 @@ $(document).ready(function(e) {
 		else{
 			var getUserDetails =getCookie("userDetails");
 			var decUserDetails = decodeURIComponent(getUserDetails);
+			console.log(decUserDetails);
 			assignValues(decUserDetails,getArticleCat,getArticleTitle);
 			submissionCount++;
 		}
-		if(submissionCount<3)
-		{
-			$("#popupOverlayOptin form").show();
-			$("#popupOverlayOptin .formSuccessMessage").hide();
-			$("#popupOverlayOptin").removeClass("hide");
-			$('input:checkbox').prop('checked', false);
+		if(getClassName == "showForm"){
+			if(submissionCount<3)
+			{
+				$("#popupOverlayOptin form").show();
+				$("#popupOverlayOptin .formSuccessMessage").hide();
+				$("#popupOverlayOptin").removeClass("hide");
+				$('input:checkbox').prop('checked', false);
+			}
+			else{
+				var getUserDetails =getCookie("userDetails");
+				var decUserDetails = decodeURIComponent(getUserDetails);
+				assignValues(decUserDetails,getArticleCat,getArticleTitle);
+				$("#popupOverlayOptin").addClass("hide");
+				$("#optin-us").prop("checked",true);
+				$("#btn-submit-jp").click();
+			}
 		}
 		else{
-			var getUserDetails =getCookie("userDetails");
-			var decUserDetails = decodeURIComponent(getUserDetails);
-			assignValues(decUserDetails,getArticleCat,getArticleTitle);
-			$("#popupOverlayOptin").addClass("hide");
-			$("#optin-us").prop("checked",true);
-			$("#btn-submit-jp").click();
+			formsubmitForJpUnbind(getArticleCat,getArticleTitle);
+			if(getRedirID !="showVideoThum"){
+				window.open(getRedirURL);
+				$("#"+getRedirID).attr("href",getRedirURL);
+			}
+			else
+			{
+				$("#overlayVideo #videoPlayerURL").addClass("showVideoPlayer");
+				plenaryVideoPlay();
+			}
 		}
 	}
 	function assignValues(decUserDetails,getArticleCat,getArticleTitle){
-		var splitArray = decUserDetails.split(",");
-		console.log(splitArray);
+		var splitArray = decUserDetails.split("-");
+		//console.log(splitArray);
 		$("#firstName-jp").val(splitArray[0]);
 		$("#emailAddress-jp").val(splitArray[1]);
 		$("#busPh-jp").val(splitArray[2]);
@@ -696,7 +723,7 @@ $(document).ready(function(e) {
 		$("#surname-spelt").val(splitArray[13]);
 		$("#firstname-spelt").val(splitArray[14]);
 		$("#sizeofcompany").val(splitArray[15]);
-		console.log("company-"+splitArray[15]);
+		//console.log("company-"+splitArray[15]);
 		$("#comments-jp").val(splitArray[22]);
 		$("#clickSrcTitle-jp").val(getArticleTitle);
 		$("#clickSrcCat-jp").val(getArticleCat);
@@ -1031,7 +1058,7 @@ $(document).ready(function(e) {
 				$("#errcountry-jp").text(" ");
 			}
 			if(errMsg == ""){
-				var userDetails = fname+","+email+","+busPhone+","+company+","+jobTitle+","+dept+","+prefecture+","+zip+","+city+","+streetname+","+buildingname+","+fax1+","+surname+","+surname2+","+firstname2+","+sizeofcompany+","+country+","+clickSrcTitle+","+clickSrcCat+","+regionalUpdate+","+comments+","+optins+","+emailoptin+","+partner+","+emailin+","+communication;
+				var userDetails = fname+"-"+email+"-"+busPhone+"-"+company+"-"+jobTitle+"-"+dept+"-"+prefecture+"-"+zip+"-"+city+"-"+streetname+"-"+buildingname+"-"+fax1+"-"+surname+"-"+surname2+"-"+firstname2+"-"+sizeofcompany+"-"+country+"-"+clickSrcTitle+"-"+clickSrcCat+"-"+regionalUpdate+"-"+comments+"-"+optins+"-"+emailoptin+"-"+partner+"-"+emailin+"-"+communication;
 				var encodeDetails = encodeURIComponent(userDetails);
 				document.cookie="userDetails="+encodeDetails+";expires="+newdate+";path=/";
 				formsubmitForJp(fname,email,busPhone,company,jobTitle,dept,prefecture,zip,city,streetname,buildingname,fax1,surname,surname2,firstname2,sizeofcompany,country,clickSrcTitle,clickSrcCat,regionalUpdate,comments,optins,emailoptin,partner,emailin,communication);
@@ -1079,6 +1106,41 @@ $(document).ready(function(e) {
 				document.cookie = "downloadCtaClickCount="+submissionCount+";expires="+newdate+";path=/";
 				var faxCon = fax1;
 				var data = "&assetName="+clickSrcTitle+"&assetCatogrey="+clickSrcCat+"&viewedVideos="+viewVideoCookie+"&formSubmits="+totalPDFDownlaod+"&webVisit="+pageViewCount+"&relatedArticles="+relatedArticles+"&region="+regionalUpdate+"&firstName="+fname+"&emailAddress="+email+"&busPhone="+busPhone+"&company="+company+"&jobFunction1="+jobTitle+"&department="+dept+"&country="+country+"&comments="+comments+"&prefecture="+prefecture+"&zip="+zip+"&city="+city+"&streetname="+streetname+"&buildingname="+buildingname+"&surname="+surname+"&surname2="+surname2+"&firstname2="+firstname2+"&sizeofcompany="+sizeofcompany+"&fax="+faxCon+"&optin="+optins+"&emailoptin="+emailoptin+"&Partner="+partner+"&emailin="+emailin+"&communication="+communication;
+				$.ajax({
+				url:"//s2502.t.eloqua.com/e/f2?elqFormName="+eloquaFormName+"&elqSiteID=2502",
+				type: "POST",
+				data:data,
+				crossDomain: true,
+				complete: function(msg) 
+				{
+					
+				},
+				error: function(xhr, textS, resp) {
+					//console.log("Error ajax");		
+				}
+			});
+		}
+		function formsubmitForJpUnbind(getArticleCat,getArticleTitle){
+			var videoCookie=getCookie("totalPDFDownloadVideo");
+			var articleCookie=getCookie("totalPDFDownloadArticle");
+			var viewVideoCookie=getCookie("totalShowVideo");
+			var relatedArticles=getCookie("totalClicksRelatedArticle");
+			var pageViewCount=getCookie("pageLoadView");
+			if(videoCookie == ""){
+				videoCookie=0;
+			}
+			if(articleCookie == ""){
+				articleCookie=0;
+			}
+			if(viewVideoCookie == ""){
+				viewVideoCookie=0;
+			}
+			if(relatedArticles == ""){
+				relatedArticles=0;
+			}
+			var totalArticlesClicked = parseInt(videoCookie)+parseInt(articleCookie)+parseInt(viewVideoCookie)+parseInt(relatedArticles);
+			var totalPDFDownlaod = parseInt(videoCookie)+parseInt(articleCookie)+parseInt(relatedArticles);
+			var data = "&emailAddress="+visiorEmail+"&assetName="+getArticleTitle+"&assetCatogrey="+getArticleCat+"&viewedVideos="+viewVideoCookie+"&formSubmits="+totalPDFDownlaod+"&webVisit="+pageViewCount+"&relatedArticles="+relatedArticles+"&region="+regionalUpdate;
 				$.ajax({
 				url:"//s2502.t.eloqua.com/e/f2?elqFormName="+eloquaFormName+"&elqSiteID=2502",
 				type: "POST",
