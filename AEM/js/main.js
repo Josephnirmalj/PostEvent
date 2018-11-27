@@ -342,6 +342,7 @@ $(document).ready(function(e) {
 				$(".category-title").addClass("sessionHide");
 				$("#itTrans").addClass("sessionShow");
 				$("#itTrans").removeClass("sessionHide");
+				$("#sponsor-logos").removeClass("sessionHide").addClass("sessionShow");
 			}
 		else if(activeMenu == "digitalMenu")
 			{
@@ -349,6 +350,7 @@ $(document).ready(function(e) {
 				$(".category-title").addClass("sessionHide");
 				$("#digitalTrans").addClass("sessionShow");
 				$("#digitalTrans").removeClass("sessionHide");
+				$("#sponsor-logos").removeClass("sessionHide").addClass("sessionShow");
 			}
 		else if(activeMenu == "workForceMenu")
 			{
@@ -356,6 +358,7 @@ $(document).ready(function(e) {
 				$(".category-title").addClass("sessionHide");
 				$("#workForceTrans").addClass("sessionShow");
 				$("#workForceTrans").removeClass("sessionHide");
+				$("#sponsor-logos").removeClass("sessionHide").addClass("sessionShow");
 			}
 		else if(activeMenu == "securityMenu")
 			{
@@ -363,6 +366,7 @@ $(document).ready(function(e) {
 				$(".category-title").addClass("sessionHide");
 				$("#securityTrans").addClass("sessionShow");
 				$("#securityTrans").removeClass("sessionHide");
+				$("#sponsor-logos").removeClass("sessionHide").addClass("sessionShow");
 			}
 		else if(activeMenu == "sponsorMenu")
 			{
@@ -370,6 +374,7 @@ $(document).ready(function(e) {
 				$(".category-title").addClass("sessionHide");
 				$("#Sponsor").addClass("sessionShow");
 				$("#Sponsor").removeClass("sessionHide");
+				$("#sponsor-logos").removeClass("sessionHide").addClass("sessionShow");
 			}
 	});
 		$('.nav-btn').click(function(){
