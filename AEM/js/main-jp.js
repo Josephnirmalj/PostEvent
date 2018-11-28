@@ -572,7 +572,6 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalShowVideo="+countA+";expires="+newdate+";path=/";
-			getClassName ="showForm";
 			formJp(getArticleCat,getArticleTitle,getClassName);
 	});
 	$("#VideoDownload").on("click",function(e){
