@@ -429,7 +429,7 @@ p.article-content {
 	padding: 10px
 }
 #overlayVideo .video-sponsor ul li,#sponsor-logos.video-sponsor ul li{
-	display: contents;
+	display: inline;
 	list-style: none;
 	padding: 10px
 }
