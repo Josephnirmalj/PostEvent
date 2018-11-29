@@ -537,19 +537,19 @@ var dataArticle=[
 		artDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/delltechnologies-IT-Transformation-Pdf-6.pdf",
 		cookieForLead:"pdfArticleLead_6",
 
-		relArtIconUrl1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/idg-research-hybrid-cloud-white-paper.pdf",
+		relArtIconUrl1:"https://www.dellemc.com/ja-jp/it-transformation/index.htm#cobrand=intel&overlay=/collateral/analyst-reports/idg-research-hybrid-cloud-white-paper.pdf",
 		relArtIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 		relArtIconTitle1:"",
 		relArtIconDecs1:"ホワイトペーパー: ハイブリッド クラウド コンピューティング: デジタル ビジネス実現の鍵",
 		relArtClicksCookie1:"clicksRelatedArticle_9",
 		
-		relArtIconUrl2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/esg-in-cloud-data-protection-wp.pdf",
+		relArtIconUrl2:"https://www.dellemc.com/ja-jp/data-protection/index.htm#cobrand=intel&overlay=//japan.emc.com/collateral/analyst-reports/esg-in-cloud-data-protection-wp.pdf",
 		relArtIconImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 		relArtIconTitle2:"",
 		relArtIconDecs2:"ホワイトペーパー: Dell EMC データ保護ソフトウェアによるクラウド内のデータ保護の経済的価値",
 		relArtClicksCookie2:"clicksRelatedArticle_10",
 		 
-		relArtIconUrl3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/dell-emc-esg-dp-matters-when-transforming.pdf",
+		relArtIconUrl3:"https://www.dellemc.com/ja-jp/it-transformation/index.htm#cobrand=intel&overlay=article/dell-emc-esg-dp-matters-when-transforming",
 		relArtIconImg3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 		relArtIconTitle3:"",
 		relArtIconDecs3:"ブローシャ: クラウドを活用してITトランスフォーメーションを実施する際にはデータ保護が重要",
@@ -1312,12 +1312,11 @@ var dataArticle=[
 		artCat:"IT Transformation",
 		artMainHead:"ハイエンドストレージの代表格であるDell EMC PowerMaxが提供する価値を分析",
 		artDate:"30 April | 1:10:34",
-		artMainContent:"T業界の変革を常に牽引してきた Symmetrixシリーズの流れを汲み、更に進化したPowerMax。<br>その圧倒的なパワー、ビルドイン型のAI/MLを駆使した容易な運用、卓越した信頼性が、お客様のデジタルトランスフォーメーション、ITトランスフォーメーションにいかに貢献できるかをご案内します。<br>クラウド技術を駆使した、CloudIQによるプロアクティブな運用支援、アプリケーションワークロードの自動検知による自律型のIOワークフロー技術等により、爆発的に増加するデータ管理とデータストレージサービスの信頼性提供と運用管理負荷低減を両立させます。この最高峰のストレージがミッドレンジの価格帯からご利用可能となるPowerMax2000。圧倒的なスケーラビリティとメインフレームストレージまでの統合が可能なPowerMax8000。最新の事例のご紹介を含めて解説します。"
-,
+		artMainContent:"T業界の変革を常に牽引してきた Symmetrixシリーズの流れを汲み、更に進化したPowerMax。<br>その圧倒的なパワー、ビルドイン型のAI/MLを駆使した容易な運用、卓越した信頼性が、お客様のデジタルトランスフォーメーション、ITトランスフォーメーションにいかに貢献できるかをご案内します。<br>クラウド技術を駆使した、CloudIQによるプロアクティブな運用支援、アプリケーションワークロードの自動検知による自律型のIOワークフロー技術等により、爆発的に増加するデータ管理とデータストレージサービスの信頼性提供と運用管理負荷低減を両立させます。この最高峰のストレージがミッドレンジの価格帯からご利用可能となるPowerMax2000。圧倒的なスケーラビリティとメインフレームストレージまでの統合が可能なPowerMax8000。最新の事例のご紹介を含めて解説します。",
 		artDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/delltechnologies-IT-Transformation-Pdf-19.pdf",
 		cookieForLead:"pdfArticleLead_19",
 
-		relArtIconUrl1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/idc-nvme-unlocking-next-gen-tier-0-data-storage.pdf",
+		relArtIconUrl1:"https://www.dellemc.com/ja-jp/storage/powermax.htm#cobrand=xeon&overlay=/collateral/white-paper/idc-nvme-unlocking-next-gen-tier-0-data-storage.pdf&collapse",
 		relArtIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 		relArtIconTitle1:"",
 		relArtIconDecs1:"IDC Report: NVMe：次世代のティア0ストレージ実現のための鍵",
@@ -1329,7 +1328,7 @@ var dataArticle=[
 		relArtIconDecs2:"DELL EMC POWERMAX登場",
 		relArtClicksCookie2:"clicksRelatedArticle_32",
 		
-		relArtIconUrl3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/h16738-powermax-top-ten-ho.pdf",
+		relArtIconUrl3:"https://www.dellemc.com/ja-jp/storage/powermax.htm#collapse&tab0=1&overlay=https://japan.emc.com/collateral/handouts/h16738-powermax-top-ten-ho.pdf",
 		relArtIconImg3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 		relArtIconTitle3:"",
 		relArtIconDecs3:"POWERMAXを選択する主な理由",
@@ -1384,7 +1383,7 @@ var dataArticle=[
 		relArtIconDecs1:"Dell EMC PowerEdgeサーバー Did You Know? Vol.3 - PowerEdge MX編",
 		relArtClicksCookie1:"clicksRelatedArticle_34",
 		
-		relArtIconUrl2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/esg-the-impact-of-modular-compute.pdf",
+		relArtIconUrl2:"https://www.dellemc.com/ja-jp/servers/index.htm#cobrand=scalable&overlay=//japan.emc.com/collateral/white-papers/esg-the-impact-of-modular-compute.pdf",
 		relArtIconImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 		relArtIconTitle2:"",
 		relArtIconDecs2:"モダナイズされたITから得られるインサイト：モジュラー型コンピューティングが与えうる大きな影響",
@@ -1680,7 +1679,7 @@ var dataArticle=[
 		artDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/workforce2_B-6.pdf",
 		cookieForLead:"pdfArticleLead_25",
 
-		relArtIconUrl1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/2030-report-inforgraphic.pdf",
+		relArtIconUrl1:"https://www.dellemc.com/ja-jp/workforce-solutions/purposedrivendesigns.htm#overlay=/collateral/infographic/2030-report-inforgraphic.pdf",
 		relArtIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 		relArtIconTitle1:"",
 		relArtIconDecs1:"ビジネスの未来にそなえる",
@@ -1692,7 +1691,7 @@ var dataArticle=[
 		relArtIconDecs2:" 無限大に広がるお客様の可能性",
 		relArtClicksCookie2:"clicksRelatedArticle_41",
 		
-		relArtIconUrl3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/jp/events/forum/Post-Event-Assets/2030-report-article.pdf",
+		relArtIconUrl3:"https://www.dellemc.com/ja-jp/workforce-solutions/purposedrivendesigns.htm#scroll=off&overlay=/collateral/article/2030-report-article.pdf",
 		relArtIconImg3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 		relArtIconTitle3:"",
 		relArtIconDecs3:"未来の働き方のために",
