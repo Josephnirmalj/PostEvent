@@ -110,6 +110,9 @@ $(document).ready(function(e) {
     	if(window.location.href.indexOf("ja-jp") > -1) {
       		regionalUpdate = "Japan";
     	}
+    	if(window.location.href.indexOf("ko-kr") > -1) {
+      		regionalUpdate = "Korea";
+    	}
 		//video player settings			
 		//videoctrl for plenery session 
 		function plenaryVideo(loadVideoID){
