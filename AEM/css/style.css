@@ -426,12 +426,10 @@ p.article-content {
 .video-sponsor ul li {
 	display: block;
 	list-style: none;
-	padding: 10px
 }
-#overlayVideo .video-sponsor ul li,#sponsor-logos.video-sponsor ul li{
+#sponsor-logos.video-sponsor ul li{
 	display: inline;
 	list-style: none;
-	padding: 10px
 }
 .video-sponsor ul li img {
 	max-width: 261px;
