@@ -380,7 +380,7 @@ var dataArticle=[
 		relArtIconUrl1:"https://players.brightcove.net/694940018001/HyKWpHua_default/index.html?videoId=5860800092001",
 		relArtIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon33.jpg",
 		relArtIconTitle1:"",
-		relArtIconDecs1:"講演動画",
+		relArtIconDecs1:"講演動画：業界最新技術を搭載した、Future Proofedプライマリーストレージポートフォリオの最新情報を徹底解説",
 		relArtClicksCookie1:"clicksRelatedArticle_7",
 		
 		relArtThumb1:"pdfArticle_3",
@@ -1632,7 +1632,7 @@ var dataArticle=[
 		relArtIconUrl1:"https://players.brightcove.net/694940018001/HyKWpHua_default/index.html?videoId=5860790992001",
 		relArtIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon33.jpg",
 		relArtIconTitle1:"",
-		relArtIconDecs1:"講演動画",
+		relArtIconDecs1:"講演動画：Why Dell? 働き手の生産性、セキュリティ、モティベーションを上げるクライアント・ソリューション",
 		relArtClicksCookie1:"clicksRelatedArticle_39",
 
 		relArtIconUrl4:"",

@@ -34,7 +34,7 @@ $(document).ready(function(e) {
 	}
 	//static designs
 	$("body").addClass("overflow-active");
-	$(".subnav-view .expand-mobile-menu span").text("Online");
+	$(".subnav-view .expand-mobile-menu span").text("講演動画・資料");
 	//dynamic designs
 	var getWindowHeight = $( window ).height();
 	var getWindowWidth = $( window ).width();
