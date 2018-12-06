@@ -722,7 +722,8 @@ a.downloadLink {
 }
 #overlayVideo #showVideoThum{
 	width: 100%;
-	height: auto
+	height: auto;
+	cursor: pointer;
 }
 #overlayVideo #videoPlayerURL {
 	visibility: hidden;

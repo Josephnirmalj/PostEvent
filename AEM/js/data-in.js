@@ -1,17 +1,17 @@
 var dataVideo=[
 {
 	articleNumber:0,
-	videoPlayerURL:"5853237496001",
-	showVideoThum:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rajesh-Janey.jpg",
+	videoPlayerURL:"5972909587001",
+	showVideoThum:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/chitra.png",
 	cookieForLeadVideo:"ShowVideo_2",
 	videoHead:"Innovating for the future",
 	videoDate:"30 April | 1:10:34",
 	videoContent:"The Fourth Industrial Revolution is approaching and is, in many ways, already underway. While the full digital transformation will require new approaches to infrastructure, infrastructure management and security, there are several emerging technology trends already accelerating this shift. These technologies share a common thread: each of them is fueled by data. And as we continue to embrace the burgeoning digital economy, the true value of data as currency will become increasingly clear. Dell Technologies is here to empower organizations to embrace this world of change.",
-	VideoDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/Rajesh Janey.pdf",
+	VideoDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/Keynote No 1 - Chitra.pdf",
 	cookieForLead:"videoArticle_2",
 
-	VideoSpeakerName1:"Rajesh Janey",
-	VideoSpeakerDesc1:"President and Managing Director,<br>India Enterprise, Dell EMC",
+	VideoSpeakerName1:"Chitra Thankaswamy",
+	VideoSpeakerDesc1:"Senior Vice President, Global Commercial Client Solutions Marketing,<br>Dell",
 
 	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23video_0",
 	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23video_0",
@@ -156,7 +156,6 @@ var dataVideo=[
 	relVidThumbSpeaker2:"Amit Midha2"
 }
 ];
-
 var dataArticle=[
 	{
 		articleNumber:0,

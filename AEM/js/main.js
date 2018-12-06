@@ -319,6 +319,7 @@ $(document).ready(function(e) {
 			//nav bar controlls
 	$(".menuLink").on("click",function(){
 		homeVideoCtrl();
+		plenaryVideoPause();
 		window.history.replaceState({}, document.title, "#" + "");
 		$("#homePageLoad").addClass("sessionHide");
 		$("#homePageLoad").removeClass("sessionShow");
@@ -635,6 +636,7 @@ $(document).ready(function(e) {
 				countA = parseInt(countA)+parseInt(countVall);
 			}
 			document.cookie = "totalShowVideo="+countA+";expires="+newdate+";path=/";
+			playThumbVideo();
 			ajaxFormSubmit();
 	});
 	$("#VideoDownload").on("click",function(){
@@ -705,10 +707,16 @@ $(document).ready(function(e) {
 			document.cookie = "totalClicksRelatedArticle="+countA+";expires="+newdate+";path=/";
 			ajaxFormSubmit(getArticleCat,getArticleTitle);
 	});
-	$(".showVideo").on("click",function(){
+	/*$(".showVideo").on("click",function(){
+		alert();
 		$("#overlayVideo #videoPlayerURL").addClass("showVideoPlayer");
 		plenaryVideoPlay();
-	});
+	});*/
+
+	function playThumbVideo(){
+		$("#overlayVideo #videoPlayerURL").addClass("showVideoPlayer");
+		plenaryVideoPlay();
+	}
 	$(".close-btn").on("click",function(){
 		plenaryVideoPause();
 		window.history.replaceState({}, document.title, "#" + "");

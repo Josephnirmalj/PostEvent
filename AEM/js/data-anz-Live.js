@@ -237,7 +237,7 @@ var dataArticle=[
 		artMainHead:"The Power of the Compute Portfolio: Dell EMC PowerEdge",
 		artDate:"30 April | 1:10:34",
 		artMainContent:"Transforming IT can speed application deployment, reduce your effort on IT operations, and reduce costs.  PowerEdge is the bedrock of modern IT. Learn how our customers are using PowerEdge to power their applications now and in the future.",
-		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/the power of the compute portfolio dell emc poweredge.pdf",
+		artDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/en-au/Events/Forums/Post-Event-Assets/The%20Power%20of%20the%20Compute%20Portfolio%20Dell%20EMC%20PowerEdge.pdf",
 		cookieForLead:"pdfArticleLead_2",
 
 		relArtIconUrl1:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/esg-transform-your-it-with-modern-server-infrastucture-brief.pdf",
@@ -296,8 +296,8 @@ var dataArticle=[
 		artCat:"IT Transformation",
 		artMainHead:"The Power of Convergence: The Dell EMC Converged and Hyper Converged Portfolio",
 		artDate:"30 April | 1:10:34",
-		artMainContent:"Converged and Hyper-Converged systems are the fastest way to achieve business outcomes. In this session, you will learn about how Dell EMC’s converged and hyper-converged portfolio, including VxRail, VxRack and VxBlock 1000, has evolved to support the requirements of modern data centers around the world.",
-		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/the power of convergence The dell emc converged and hyper converged portfolio.pdf",
+		artMainContent:"Converged and Hyper-Converged systems are the fastest way to achieve business outcomes. In this session, you will learn about how Dell EMC’s converged and hyper-converged portfolio, including VxRail, VxRack and VxBlock 1000, has evolved to support the requirements of modern data centres around the world.",
+		artDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/en-au/Events/Forums/Post-Event-Assets/The%20Power%20of%20Convergence%20The%20Dell%20EMC%20Converged%20and%20Hyper%20Converged%20Portfolio.pdf",
 		cookieForLead:"pdfArticleLead_3",
 
 		relArtIconUrl1:"https://www.dellemc.com/en-sg/converged-infrastructure/index.htm#cobrand=xeon&video-overlay=5743076379001",
@@ -344,7 +344,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/delltech",
 		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
 		
-		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/Luke-Brown_340x300.jpg",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/en-au/Events/Forums/Post-Event-Assets/Luke-Brown-Headshot.jpg",
 		artSpeakerName1:"Luke Brown",
 		artSpeakerDecs1:"Advisory Systems Engineer,<br>Dell EMC",
 		
@@ -355,7 +355,7 @@ var dataArticle=[
 		artCat:"IT Transformation",
 		artMainHead:"The Power of Modern: Dell EMC Storage & Data Protection Solutions",
 		artDate:"30 April | 1:10:34",
-		artMainContent:"Modern IT begins with modern infrastructure.  Infrastructure that can drive applications, new and old, glean value from information, and protect what has rapidly become your most valued asset – your data.  Learn about the Dell EMC industry-leading Storage & Data Protection portfolio – what’s new, what’s cutting-edge, and what we can do to help your organization accelerate your business on your path to Digital Transformation",
+		artMainContent:"Modern IT begins with modern infrastructure.  Infrastructure that can drive applications, new and old, glean value from information, and protect what has rapidly become your most valued asset – your data.  Learn about the Dell EMC industry-leading Storage & Data Protection portfolio – what’s new, what’s cutting-edge, and what we can do to help your organisation accelerate your business on your path to Digital Transformation",
 		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/the power of modern dell emc storage & data protection solutions_intel integration.pdf",
 		cookieForLead:"pdfArticleLead_4",
 
@@ -414,7 +414,7 @@ var dataArticle=[
 		artCat:"IT Transformation",
 		artMainHead:"Moving to a Disaggregated Data Center with the New PowerEdge MX Kinetic Infrastructure",
 		artDate:"30 April | 1:10:34",
-		artMainContent:"An emerging category of data center infrastructure seeks to disaggregate IT resources into shared compute, storage and fabric pools that can be available for on-demand allocation.  Learn how PowerEdge MX kinetic infrastructure, the first modular architecture designed for server disaggregation, creates a flexible and agile environment that increases utilization efficiency and provides investment protection for future generations of technological advances.",
+		artMainContent:"An emerging category of data center infrastructure seeks to disaggregate IT resources into shared compute, storage and fabric pools that can be available for on-demand allocation.  Learn how PowerEdge MX kinetic infrastructure, the first modular architecture designed for server disaggregation, creates a flexible and agile environment that increases utilisation efficiency and provides investment protection for future generations of technological advances.",
 		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/moving to a disaggregated data center with the new powerEdge mx kinetic_intel integration.pdf",
 		cookieForLead:"pdfArticleLead_5",
 
@@ -590,7 +590,7 @@ var dataArticle=[
 		artCat:"IT Transformation",
 		artMainHead:"Unlocking Your Data Capital: A Sneak-Peek Into The Future Of Isilon & ECS",
 		artDate:"30 April | 1:10:34",
-		artMainContent:'Unstructured data is driving the digital transformation that is disrupting nearly every business today. Organizations that harness their file, object, and streaming data, can gain a massive competitive advantage. In this session, we’ll describe a data strategy with Isilon and ECS that can boost the value of your “data capital” and provide a powerful competitive edge for your organization.',
+		artMainContent:'Unstructured data is driving the digital transformation that is disrupting nearly every business today. Organisation that harness their file, object, and streaming data, can gain a massive competitive advantage. In this session, we’ll describe a data strategy with Isilon and ECS that can boost the value of your “data capital” and provide a powerful competitive edge for your organisation.',
 		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/unlocking your data capital a sneak peek into the future of Isilon & ecs.pdf",
 		cookieForLead:"pdfArticleLead_8",
 
@@ -709,10 +709,10 @@ var dataArticle=[
 		artSpeakerDecs2:"",
 		
 		artCat:"IT Transformation",
-		artMainHead:"Dell EMC For Data Protection: Key Ingredient In Modernization & Transformation",
+		artMainHead:"Dell EMC For Data Protection: Key Ingredient In Modernisation & Transformation",
 		artDate:"30 April | 1:10:34",
-		artMainContent:"As critical business data get more and more distributed from core to edge to cloud, as new regulations surface (GDPR) and new threats to business operations arise such (i.e. Cyber-attacks)-data protection gains importance and priority as a critical pillar in the IT transformation journey. Come find out how Dell EMC’s Data protection portfolio can help you powerfully transform your data protection strategies with a thorough approach to data protection regardless of where your data lives, on-premise or in multiple clouds, or how you consume it. Also find out what’s new in the year with our protection appliances Data Domain, Integrated Data Protection Appliance’s(IDPA) and software with Data Protection Suite(DPS) to further simplify, automate and modernize your current data protection environment, providing the transformative data protection infrastructure to meet the future demands.",
-		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/dell emc for data protection key ingredient in modernization & transformation.pdf",
+		artMainContent:"As critical business data get more and more distributed from core to edge to cloud, as new regulations surface (GDPR) and new threats to business operations arise such (i.e. Cyber-attacks)-data protection gains importance and priority as a critical pillar in the IT transformation journey. Come find out how Dell EMC’s Data protection portfolio can help you powerfully transform your data protection strategies with a thorough approach to data protection regardless of where your data lives, on-premise or in multiple clouds, or how you consume it. Also find out what’s new in the year with our protection appliances Data Domain, Integrated Data Protection Appliance’s(IDPA) and software with Data Protection Suite(DPS) to further simplify, automate and modernise your current data protection environment, providing the transformative data protection infrastructure to meet the future demands.",
+		artDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/en-au/Events/Forums/Post-Event-Assets/Dell%20EMC%20For%20Data%20Protection%20Key%20Ingredient%20In%20Modernisation%20&%20Transformation_v3.pdf",
 		cookieForLead:"pdfArticleLead_10",
 
 		relArtIconUrl1:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/esg-enabling-it-transformation-with-modern-data-protection-strategies.pdf",
@@ -769,10 +769,10 @@ var dataArticle=[
 		artSpeakerDecs2:"",
 		
 		artCat:"IT Transformation",
-		artMainHead:"VxRack SDDC & VMware Cloud Foundation: Transformative Advantage Of Standardizing & Simplifying Infrastructure",
+		artMainHead:"VxRack SDDC & VMware Cloud Foundation: Transformative Advantage Of Standardising & Simplifying Infrastructure",
 		artDate:"30 April | 1:10:34",
-		artMainContent:"In this session, we’ll show how VxRack SDDC, powered by VMware Cloud Foundation, delivers advanced automation and lifecycle management for the software-defined data center, to include compute, storage, network virtualization and cloud management, to drastically simplify the deployment, configuration and ongoing management of a modern private cloud, and forms the basis for a true hybrid cloud.",
-		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/vxrack sddc and vmware cloud foundation transformative advantage of standardizing and simplifying infrastructure.pdf",
+		artMainContent:"In this session, we’ll show how VxRack SDDC, powered by VMware Cloud Foundation, delivers advanced automation and lifecycle management for the software-defined data center, to include compute, storage, network virtualisation and cloud management, to drastically simplify the deployment, configuration and ongoing management of a modern private cloud, and forms the basis for a true hybrid cloud.",
+		artDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/en-au/Events/Forums/Post-Event-Assets/VxRack%20SDDC%20and%20VMware%20Cloud%20Foundation%20Transformative%20Advantage%20of%20Standardising%20and%20Simplifying%20Infrastructure.pdf",
 		cookieForLead:"pdfArticleLead_11",
 
 		relArtIconUrl1:"https://shop.dellemc.com/en-us/VxRack-Products/Dell-EMC-VxRack-SDDC/p/VCE-VxRack-1000-SDDC-Nodes?PID=EMC_PRD-VxRack-1C9_SPLSH",
@@ -891,7 +891,7 @@ var dataArticle=[
 		artCat:"Digital Transformation",
 		artMainHead:"Virtustream Cloud Services for Mission Critical Applications",
 		artDate:"30 April | 1:10:34",
-		artMainContent:"Enterprises are under pressure to become more agile and innovative.  Virtustream helps enterprises transform mission critical applications to bring improved agility, performance, and security to core business applications.  Learn about how Virtustream helps enterprises modernize mission critical applications, accelerate cloud native enterprise application development, and solve cloud storage challenges to support digital and IT transformation.",
+		artMainContent:"Enterprises are under pressure to become more agile and innovative.  Virtustream helps enterprises transform mission critical applications to bring improved agility, performance, and security to core business applications.  Learn about how Virtustream helps enterprises modernise mission critical applications, accelerate cloud native enterprise application development, and solve cloud storage challenges to support digital and IT transformation.",
 		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/virtustream cloud services for mission critical applications.pdf",
 		cookieForLead:"pdfArticleLead_13",
 
@@ -1311,7 +1311,7 @@ var dataArticle=[
 		artCat:"Workforce Transformation",
 		artMainHead:"Workforce Transformation",
 		artDate:"30 April | 1:10:34",
-		artMainContent:"As technology transforms the world, it is also transforming the way we work. Work is no longer a destination, it’s an activity. Workers want the choice to stay connected and be productive where, when and however they need. They also have a stronger point of view on technology.  To successfully navigate this workforce transformation, you need to consider both end user needs and IT needs. Upgrading your hardware solves half the issue. Organizations also have to look at upgrading how they manage, support and secure their PCs, and find more efficient, effective solutions to meet the needs of this emerging workforce. In this session, let us explain how Workforce Transformation can work for you.",
+		artMainContent:"As technology transforms the world, it is also transforming the way we work. Work is no longer a destination, it’s an activity. Workers want the choice to stay connected and be productive where, when and however they need. They also have a stronger point of view on technology.  To successfully navigate this workforce transformation, you need to consider both end user needs and IT needs. Upgrading your hardware solves half the issue. Organisations also have to look at upgrading how they manage, support and secure their PCs, and find more efficient, effective solutions to meet the needs of this emerging workforce. In this session, let us explain how Workforce Transformation can work for you.",
 		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/workforce transformation.pdf",
 		cookieForLead:"pdfArticleLead_20",
 
@@ -1551,7 +1551,7 @@ var dataArticle=[
 		artCat:"Security Transformation",
 		artMainHead:"Digital transformation is creating new challenges for security. Are you ready?",
 		artDate:"30 April | 1:10:34",
-		artMainContent:"Business leaders across industries are focused on leveraging technology to reach the right customers quickly and to identify new opportunities. The IT transformation necessary to meet these goals has big implications on security. An understanding of strategy and tactics for a holistic view of your environment and an insight into the 'why' and 'how' of infrastructure security gives you the edge as chart your organization's transformation success.",
+		artMainContent:"Business leaders across industries are focused on leveraging technology to reach the right customers quickly and to identify new opportunities. The IT transformation necessary to meet these goals has big implications on security. An understanding of strategy and tactics for a holistic view of your environment and an insight into the 'why' and 'how' of infrastructure security gives you the edge as chart your organisation’s transformation success.",
 		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/dtf-post-event-anz/Digital Transformation Creating New Challenges for Security.pdf",
 		cookieForLead:"pdfArticleLead_24",
 
