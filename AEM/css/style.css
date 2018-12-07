@@ -444,7 +444,9 @@ p.article-content {
 }
 #overlayVideo .related-articles {
 	padding-left: 0;
-	display: none
+}
+#overlayVideo .related-articles .row:last-child,#overlayVideo .related-articles .pdfRelatedArticleRuler{
+	display: none;
 }
 .related-articles h5 {
 	color: #d84325
