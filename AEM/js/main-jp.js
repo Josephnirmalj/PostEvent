@@ -1,4 +1,4 @@
-$(document).ready(function(e) {
+	$(document).ready(function(e) {
 	//cookie expires
 	var date = new Date();
 	var days = 365;
@@ -334,8 +334,6 @@ $(document).ready(function(e) {
 	$(".video-doc-content").on("click",function(){
 			var getVideoArticleIDClick = $(this).attr("id");
 		articleVideo(getVideoArticleIDClick);
-	
-
 	});
 	function articleVideo(getVideoArticleIDClick){
 			var countV="";
@@ -373,11 +371,12 @@ $(document).ready(function(e) {
 		if(getWindowWidth < 992){
 			$(".right-staic-bar").removeClass("mobileLayoutAutoHeight");
 		}
+		
 		var splitVideoID = getVideoArticleID.split("_");
 		var arraySelectionID = splitVideoID[1];
 		//video content popup from data js and var is datavideo
-		$("#clickSrcTitle-jp").val(dataVideo[arraySelectionID].videoHead);
-		$("#clickSrcCat-jp").val(dataVideo[arraySelectionID].videoCat);
+		//$("#clickSrcTitle-jp").val(dataVideo[arraySelectionID].videoHead);
+		//$("#clickSrcCat-jp").val(dataVideo[arraySelectionID].videoCat);
 		$("#clickSrcTitle").val(dataVideo[arraySelectionID].videoHead);
 		$("#clickSrcCat").val(dataVideo[arraySelectionID].videoCat);
 		plenaryVideo(dataVideo[arraySelectionID].videoPlayerURL);
@@ -399,22 +398,35 @@ $(document).ready(function(e) {
 		$(".FBShareURL").attr("href",dataVideo[arraySelectionID].FBShareURL);
 		$(".TwitterShareURL").attr("href",dataVideo[arraySelectionID].TwitterShareURL);
 		$(".LinkedinShareURL").attr("href",dataVideo[arraySelectionID].LinkedinShareURL);
-		$("#relVidIconUrl1").attr("href",dataVideo[arraySelectionID].relVidIconUrl1);
+		
+		$("#relVidIconUrl1").attr("data-url",dataVideo[arraySelectionID].relVidIconUrl1);
+		$("#relVidIconUrl1").removeClass();
+		$("#relVidIconUrl1").addClass(dataVideo[arraySelectionID].relVidClicksCookie1);
 		$("#relVidIconImg1").attr("src",dataVideo[arraySelectionID].relVidIconImg1);
 		$("#relVidIconTitle1").text(dataVideo[arraySelectionID].relVidIconTitle1);
 		$("#relVidIconDecs1").text(dataVideo[arraySelectionID].relVidIconDecs1);
-		$("#relVidIconUrl2").attr("href",dataVideo[arraySelectionID].relVidIconUrl2);
+
+		$("#relVidIconUrl2").attr("data-url",dataVideo[arraySelectionID].relVidIconUrl2);
+		$("#relVidIconUrl2").removeClass();
+		$("#relVidIconUrl2").addClass(dataVideo[arraySelectionID].relVidClicksCookie2);
 		$("#relVidIconImg2").attr("src",dataVideo[arraySelectionID].relVidIconImg2);
 		$("#relVidIconTitle2").text(dataVideo[arraySelectionID].relVidIconTitle2);
 		$("#relVidIconDecs2").text(dataVideo[arraySelectionID].relVidIconDecs2);
-		$("#relVidIconUrl3").attr("href",dataVideo[arraySelectionID].relVidIconUrl3);
+
+		$("#relVidIconUrl3").attr("data-url",dataVideo[arraySelectionID].relVidIconUrl3);
+		$("#relVidIconUrl3").removeClass();
+		$("#relVidIconUrl3").addClass(dataVideo[arraySelectionID].relVidClicksCookie3);
 		$("#relVidIconImg3").attr("src",dataVideo[arraySelectionID].relVidIconImg3);
 		$("#relVidIconTitle3").text(dataVideo[arraySelectionID].relVidIconTitle3);
 		$("#relVidIconDecs3").text(dataVideo[arraySelectionID].relVidIconDecs3);
-		$("#relVidIconUrl4").attr("href",dataVideo[arraySelectionID].relVidIconUrl4);
+
+		$("#relVidIconUrl4").attr("data-url",dataVideo[arraySelectionID].relVidIconUrl4);
+		$("#relVidIconUrl4").removeClass();
+		$("#relVidIconUrl4").addClass(dataVideo[arraySelectionID].relVidClicksCookie4);
 		$("#relVidIconImg4").attr("src",dataVideo[arraySelectionID].relVidIconImg4);
 		$("#relVidIconTitle4").text(dataVideo[arraySelectionID].relVidIconTitle4);
 		$("#relVidIconDecs4").text(dataVideo[arraySelectionID].relVidIconDecs4);
+
 		$(".relVidThumb1").attr("id",dataVideo[arraySelectionID].relVidThumb1);
 		//$(".relVidThumb1").addClass(dataVideo[arraySelectionID].relVidThumbOverlay1);
 		$("#relVidThumbImg1").attr("src",dataVideo[arraySelectionID].relVidThumbImg1);
@@ -427,12 +439,15 @@ $(document).ready(function(e) {
 		$("#relVidThumbDate2").text(dataVideo[arraySelectionID].relVidThumbDate2);
 		$("#relVidThumbDesc2").text(dataVideo[arraySelectionID].relVidThumbDesc2);
 		$("#relVidThumbSpeaker2").text(dataVideo[arraySelectionID].relVidThumbSpeaker2);
-		if($("#"+getVideoArticleIDClick).hasClass("hiderelated"))
+		var checkRelated = $("#"+getVideoArticleID).hasClass("hideRelated");
+		if(checkRelated == true)
 		{
 			$("#VideoDownload").hide();
+			$("#overlayVideo .related-articles").hide();
 		}
-		else{  
+		else{
 			$("#VideoDownload").show();
+			$("#overlayVideo .related-articles").show();
 		}
 		//ajaxFormSubmit(dataVideo[arraySelectionID].videoCat,dataVideo[arraySelectionID].videoHead);
 		homeVideoCtrl();
@@ -627,7 +642,7 @@ $(document).ready(function(e) {
 			formJp(getCar,getTitle,getClassName);
 	});
 	//create cookie when clicking related articles
-	$("#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4").on("click",function(e){
+	$("#relArtIconUrl1,#relArtIconUrl2,#relArtIconUrl3,#relArtIconUrl4,#relVidIconUrl1,#relVidIconUrl2,#relVidIconUrl3,#relVidIconUrl4").on("click",function(e){
 		e.preventDefault();
 		getRedirID = $(this).attr("id");
 		getRedirURL = $(this).attr("data-url");
@@ -680,6 +695,8 @@ $(document).ready(function(e) {
 				$("#popupOverlayOptin .formSuccessMessage").hide();
 				$("#popupOverlayOptin").removeClass("hide");
 				$('input:checkbox').prop('checked', false);
+				$("#clickSrcCat-jp").val(getArticleCat);
+				$("#clickSrcTitle-jp").val(getArticleTitle);
 			}
 			else{
 				var getUserDetails =getCookie("userDetails");

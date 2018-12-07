@@ -87,7 +87,10 @@ p.article-content{font-size:14px;line-height:16px;margin:10px 0 10px 0}
 .video-sponsor ul li img{max-width:125px}
 #overlayArticle .article-details{padding-left:25px}
 .related-articles{padding-top:70px;padding-left:25px}
-#overlayVideo .related-articles{padding-left:0;display:none}
+#overlayVideo .related-articles{padding-left:0;}
+#overlayVideo .related-articles .row:last-child, #overlayVideo .related-articles .pdfRelatedArticleRuler {
+    display: none;
+}
 .related-articles h5{color:#d84325}
 .related-articles .speaker-thumb{padding-top:15px}
 .img-set{width:100%;height:auto}
