@@ -1,3 +1,10 @@
+After work
 Setp 1 : Commit
 Step 2 : pull
 Step 3 : Push
+
+Before work
+
+Step 1 : Pull
+
+//comments
