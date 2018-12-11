@@ -4,11 +4,4 @@ Step 2 : pull
 Step 3 : Push
 
 Before work
-
-<<<<<<< HEAD
 Step 1 : Pull
-
-//comments
-=======
-Step 1 : Pull
->>>>>>> 497aea5d3ce15447a67f1d9ffba1798523a1975d
