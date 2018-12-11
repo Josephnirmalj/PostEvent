@@ -111,7 +111,7 @@ var dataVideo=[
 	videoHead:"Keynote - Innovate Today & Customer Case Study - KPMG",
 	videoDate:"30 April | 1:10:34",
 	videoContent:"This session covers the phenomenon of digital transformation as a driving force for IT, workforce and security transformations in today's organizations. Dell Technologies portfolio is optimized to assist our customers get the most out of their transformation's experiences. We will illustrate how our customers have leveraged our portfolio to achieve significant business results through reinvention of their legacy businesses, optimization of productivity, and new courses they set for their businesses with ongoing focus on innovation. The session will also cover how success hinges on business becoming more intelligent by leveraging their data and emerging technologies.",
-	VideoDownload:"",
+	VideoDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/DTF18_Keynote_APJ_Transformations_Lyon%20Poh_Amit.pdf",
 	cookieForLead:"videoArticle_3",
 
 	VideoSpeakerName1:"Amit Midha",

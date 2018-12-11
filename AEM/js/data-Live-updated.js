@@ -79,7 +79,7 @@ var dataVideo=[
 	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ja-jp/events/forum/online.htm%23video_1&title=&summary=&source=",
 
 	relVidIconUrl1:"https://www.delltechnologies.com/ja-jp/events/ai-summit.htm#lang=ja",
-	relVidIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+	relVidIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon33.jpg",
 	relVidIconTitle1:"",
 	relVidIconDecs1:"Unlock the power of DATA～AIでビジネスを変える",
 	relVidClicksCookie1:"clicksRelatedArticle_67",
@@ -973,7 +973,7 @@ var dataArticle=[
 		cookieForLead:"pdfArticleLead_13",
 
 		relArtIconUrl1:"https://www.delltechnologies.com/ja-jp/events/ai-summit.htm#lang=ja",
-		relArtIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+		relArtIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon33.jpg",
 		relArtIconTitle1:"",
 		relArtIconDecs1:"Unlock the power of DATA～AIでビジネスを変える",
 		relArtClicksCookie1:"clicksRelatedArticle_67",

@@ -18,7 +18,7 @@ var dataVideo=[
 	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23video_0&title=&summary=&source=",
 
 	relVidIconUrl1:"https://www.delltechnologies.com/hi-in/events/ai-summit.htm#lang=en&main=replay&secondary=dtw187440956",
-	relVidIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+	relVidIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon33.jpg",
 	relVidIconTitle1:"Video",
 	relVidIconDecs1:"Unlock the power of data. Find out how artificial Intelligence extracts more value from data than ever before, impacting businesses, individuals and the way we live",
 	relVidClicksCookie1:"clicksRelatedArticle_67",
@@ -175,7 +175,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_0",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_0&title=&summary=&source=",
 
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rajesh-Singh.jpg",
 		artSpeakerName1:"Rajesh Singh",
 		artSpeakerDecs1:"Cloud Business Director - SEA & India,<br>Dell EMC",
 
@@ -216,14 +216,14 @@ var dataArticle=[
 
 		relArtThumb1:"pdfArticle_1",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rupesh-Gupta.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"The Power of the Compute Portfolio: Dell EMC PowerEdge",
 		relArtThumbSpeaker1:"Rupesh Gupta",
 
 		relArtThumb2:"pdfArticle_2",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Shailesh-H.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"The Power of Connectivity: The Dell EMC Networking Portfolio",
 		relArtThumbSpeaker2:"Shailesh H"
@@ -235,7 +235,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_1",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_1&title=&summary=&source=",
 
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rupesh-Gupta.jpg",
 		artSpeakerName1:"Rupesh Gupta",
 		artSpeakerDecs1:"Regional Head - GCN,<br>Dell EMC",
 
@@ -276,14 +276,14 @@ var dataArticle=[
 
 		relArtThumb1:"pdfArticle_2",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Shailesh-H.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"The Power of Connectivity: The Dell EMC Networking Portfolio",
 		relArtThumbSpeaker1:"Shailesh H",
 
 		relArtThumb2:"pdfArticle_3",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Matt-Smith.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"The Power of Convergence: The Dell EMC Converged and Hyper Converged Portfolio",
 		relArtThumbSpeaker2:"Matt Smith"
@@ -295,7 +295,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_2",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_2&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Shailesh-H.jpg",
 		artSpeakerName1:"Shailesh H",
 		artSpeakerDecs1:"Senior Network Technologist,<br>Dell EMC",
 		
@@ -336,14 +336,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_3",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Matt-Smith.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"The Power of Convergence: The Dell EMC Converged and Hyper Converged Portfolio",
 		relArtThumbSpeaker1:"Matt Smith",
 		
 		relArtThumb2:"pdfArticle_4",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Kevin-Batty.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"The Power of Modern: Dell EMC Storage & Data Protection Solutions",
 		relArtThumbSpeaker2:"Kevin Batty"
@@ -355,7 +355,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_3",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_3&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Matt-Smith.jpg",
 		artSpeakerName1:"Matt Smith",
 		artSpeakerDecs1:"Senior Manager - APJ Partner V Architects, MDC,<br>Dell EMC",
 		
@@ -396,14 +396,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_4",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Kevin-Batty.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"The Power of Modern: Dell EMC Storage & Data Protection Solutions",
 		relArtThumbSpeaker1:"Kevin Batty",
 		
 		relArtThumb2:"pdfArticle_5",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Xavier-Kurian.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Moving to a Disaggregated Data Center with the New PowerEdge MX Kinetic Infrastructure",
 		relArtThumbSpeaker2:"Xavier Kurian"
@@ -414,7 +414,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_4",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_4&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Kevin-Batty.jpg",
 		artSpeakerName1:"Kevin Batty",
 		artSpeakerDecs1:"CTO, Modern Data Center Team, APJ,<br>Dell EMC",
 		
@@ -426,7 +426,7 @@ var dataArticle=[
 		artMainHead:"The Power of Modern: Dell EMC Storage & Data Protection Solutions",
 		artDate:"30 April | 1:10:34",
 		artMainContent:"Modern IT begins with modern infrastructure.  Infrastructure that can drive applications, new and old, glean value from information, and protect what has rapidly become your most valued asset – your data.  Learn about the Dell EMC industry-leading Storage & Data Protection portfolio – what’s new, what’s cutting-edge, and what we can do to help your organization accelerate your business on your path to Digital Transformation",
-		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/The Power of Modern Dell EMC Storage _ Data Protection Solutions_v3.pdf",
+		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/The%20Power%20of%20Modern%20Dell%20EMC%20Storage%20_%20Data%20Protection%20Solutions_v3.pdf",
 		cookieForLead:"pdfArticleLead_5",
 
 		relArtIconUrl1:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/esg-the-impact-of-modular-compute.pdf",
@@ -455,14 +455,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_5",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Xavier-Kurian.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Moving to a Disaggregated Data Center with the New PowerEdge MX Kinetic Infrastructure",
 		relArtThumbSpeaker1:"Xavier Kurian",
 		
 		relArtThumb2:"pdfArticle_6",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Kevin-Batty2.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Dell EMC High-End Storage: What’s New in PowerMax & XtremIO X2",
 		relArtThumbSpeaker2:"Kevin Batty"
@@ -473,7 +473,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_5",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_5&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Xavier-Kurian.jpg",
 		artSpeakerName1:"Xavier Kurian",
 		artSpeakerDecs1:"Director - Solutions & Aliances,<br>Dell EMC",
 		
@@ -514,14 +514,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_6",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Kevin-Batty2.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Dell EMC High-End Storage: What’s New in PowerMax & XtremIO X2",
 		relArtThumbSpeaker1:"Kevin Batty",
 		
 		relArtThumb2:"pdfArticle_7",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Vivek-Singh.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Dell EMC Unity & SC Series: Midrange Storage Portfolio Overview",
 		relArtThumbSpeaker2:"Vivek Singh"
@@ -532,7 +532,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_6",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_6&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Kevin-Batty2.jpg",
 		artSpeakerName1:"Kevin Batty",
 		artSpeakerDecs1:"CTO , Modern Data Center Team, APJ,<br>Dell EMC",
 		
@@ -572,14 +572,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_7",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Vivek-Singh.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Dell EMC Unity & SC Series: Midrange Storage Portfolio Overview",
 		relArtThumbSpeaker1:"Vivek Singh",
 		
 		relArtThumb2:"pdfArticle_8",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Jeff-Wiggins2.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Unlocking Your Data Capital: A Sneak-Peek Into The Future Of Isilon & ECS",
 		relArtThumbSpeaker2:"Jeff Wiggins"
@@ -591,7 +591,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_7",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_7&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Vivek-Singh.jpg",
 		artSpeakerName1:"Vivek Singh",
 		artSpeakerDecs1:"Senior Manager, Software Engineering,<br>Dell EMC",
 		
@@ -632,14 +632,14 @@ var dataArticle=[
 
 		relArtThumb1:"pdfArticle_8",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Jeff-Wiggins2.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Unlocking Your Data Capital: A Sneak-Peek Into The Future Of Isilon & ECS",
 		relArtThumbSpeaker1:"Jeff Wiggins",
 		
 		relArtThumb2:"pdfArticle_9",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/T-Srnivaschary.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"The Dawn of a New Era: AI, Machine Learning and Deep Learning",
 		relArtThumbSpeaker2:"T Srnivaschary"
@@ -651,7 +651,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_8",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_8&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Jeff-Wiggins2.jpg",
 		artSpeakerName1:"Jeff Wiggins",
 		artSpeakerDecs1:"Senior Manager - UDS,<br>Dell EMC",
 		
@@ -693,14 +693,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_9",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/T-Srnivaschary.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"The Dawn of a New Era: AI, Machine Learning and Deep Learning",
 		relArtThumbSpeaker1:"T Srnivaschary",
 		
 		relArtThumb2:"pdfArticle_10",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Adesh-Manjrekar.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Dell EMC For Data Protection: Key Ingredient In Modernization & Transformation",
 		relArtThumbSpeaker2:"Adesh Manjrekar"
@@ -712,7 +712,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_9",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_9&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/T-Srnivaschary.jpg",
 		artSpeakerName1:"T Srnivaschary",
 		artSpeakerDecs1:"Principal Engineer,<br>Dell EMC",
 		
@@ -753,14 +753,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_10",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Adesh-Manjrekar.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Dell EMC For Data Protection: Key Ingredient In Modernization & Transformation",
 		relArtThumbSpeaker1:"Adesh Manjrekar", 
 		
 		relArtThumb2:"pdfArticle_11",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Ripu-Bajwa.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Cyber-Recovery: Protecting Your Business From A Destructive Ransomware",
 		relArtThumbSpeaker2:"Ripu Bajwa"
@@ -772,7 +772,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_10",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_10&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Adesh-Manjrekar.jpg",
 		artSpeakerName1:"Adesh Manjrekar",
 		artSpeakerDecs1:"Senior Manager - Systems Engineering,<br>Dell EMC",
 		
@@ -813,17 +813,17 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_11",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Ripu-Bajwa.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Cyber-Recovery: Protecting Your Business From A Destructive Ransomware",
 		relArtThumbSpeaker1:"Ripu Bajwa",
 		
 		relArtThumb2:"pdfArticle_0",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Josh-Townsend.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"VxRack SDDC & VMware Cloud Foundation: Transformative Advantage Of Standardizing & Simplifying Infrastructure",
-		relArtThumbSpeaker2:""
+		relArtThumbSpeaker2:"Josh Townsend"
 	},
 	{
 		articleNumber:11,
@@ -832,7 +832,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_11",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_11&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Ripu-Bajwa.jpg",
 		artSpeakerName1:"Ripu Bajwa",
 		artSpeakerDecs1:"Director & GM - Data Protection Solutions,<br>Dell EMC",
 		
@@ -844,7 +844,7 @@ var dataArticle=[
 		artMainHead:"Cyber-Recovery: Protecting Your Business From A Destructive Ransomware",
 		artDate:"30 April | 1:10:34",
 		artMainContent:"According to analysts, 2-3 million Ransomware attacks occurred in 2016, predicted to double every year through 2019. However, most organizations’ backup infrastructure was not designed to recover from a cyberattack.  Come find out how Dell EMC can provide a resilient infrastructure to protect and recover from a destructive cyberattack.",
-		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/Cyber-Protection _ Recovery – Protecting Your Business From a Destructive Cyber-Attack.pdf",
+		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/Cyber-Protection%20_%20Recovery%20%E2%80%93%20Protecting%20Your%20Business%20From%20a%20Destructive%20Cyber-Attack.pdf",
 		cookieForLead:"pdfArticleLead_12",
 
 		relArtIconUrl1:"https://www.dellemc.com/en-us/solutions/data-protection/isolated-recovery-solution.htm#video-overlay=5734412985001",
@@ -873,14 +873,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_12",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Josh-Townsend.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"VxRack SDDC & VMware Cloud Foundation: Transformative Advantage Of Standardizing & Simplifying Infrastructure",
-		relArtThumbSpeaker1:"",
+		relArtThumbSpeaker1:"Josh Townsend",
 		
 		relArtThumb2:"pdfArticle_13",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Mahesh-Kulkarni.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Dell IT’s Journey: Lessons from our VMware-based hybrid cloud deployment",
 		relArtThumbSpeaker2:"Mahesh Kulkarni"
@@ -892,9 +892,9 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_12",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_12&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
-		artSpeakerName1:"",
-		artSpeakerDecs1:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Josh-Townsend.jpg",
+		artSpeakerName1:"Josh Townsend",
+		artSpeakerDecs1:"VMware",
 		
 		artSpeakerUrl2:"",
 		artSpeakerName2:"",
@@ -904,7 +904,7 @@ var dataArticle=[
 		artMainHead:"VxRack SDDC & VMware Cloud Foundation: Transformative Advantage Of Standardizing & Simplifying Infrastructure",
 		artDate:"30 April | 1:10:34",
 		artMainContent:"In this session, we’ll show how VxRack SDDC, powered by VMware Cloud Foundation, delivers advanced automation and lifecycle management for the software-defined data center, to include compute, storage, network virtualization and cloud management, to drastically simplify the deployment, configuration and ongoing management of a modern private cloud, and forms the basis for a true hybrid cloud.",
-		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/VxRack SDDC and VMware Cloud Foundation Transformative Advantage of Standardizing and Simplifying Infrastructure.pdf",
+		artDownload:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/VxRack%20SDDC%20and%20VMware%20Cloud%20Foundation%20Transformative%20Advantage%20of%20Standardizing%20and%20Simplifying%20Infrastructure.pdf",
 		cookieForLead:"pdfArticleLead_13",
 
 		relArtIconUrl1:"https://shop.dellemc.com/en-us/VxRack-Products/Dell-EMC-VxRack-SDDC/p/VCE-VxRack-1000-SDDC-Nodes?PID=EMC_PRD-VxRack-1C9_SPLSH",
@@ -933,14 +933,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_13",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Mahesh-Kulkarni.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Dell IT’s Journey: Lessons from our VMware-based hybrid cloud deployment",
 		relArtThumbSpeaker1:"Mahesh Kulkarni",
 		
 		relArtThumb2:"pdfArticle_0",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rajesh-Singh.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"The Dell Technologies Multi-Cloud Strategy:  On Prem, Off Prem or Public or Private. How do you choose?",
 		relArtThumbSpeaker2:"Rajesh Singh"
@@ -952,7 +952,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_13",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_13&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Mahesh-Kulkarni.jpg",
 		artSpeakerName1:"Mahesh Kulkarni",
 		artSpeakerDecs1:"Senior Manager - IT Infrastructure,<br>Dell EMC",
 		
@@ -993,14 +993,14 @@ var dataArticle=[
 
 		relArtThumb1:"pdfArticle_0",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rajesh-Singh.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"The Dell Technologies Multi-Cloud Strategy:  On Prem, Off Prem or Public or Private. How do you choose?",
 		relArtThumbSpeaker1:"Rajesh Singh",
 		
 		relArtThumb2:"pdfArticle_1",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rupesh-Gupta.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"The Power of the Compute Portfolio: Dell EMC PowerEdge",
 		relArtThumbSpeaker2:"Rupesh Gupta"
@@ -1012,7 +1012,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_14",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_14&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Jeff-Wiggins.jpg",
 		artSpeakerName1:"Jeff Wiggins",
 		artSpeakerDecs1:"Senior Manager - UDS,<br>Dell EMC",
 		
@@ -1072,7 +1072,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_15",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_15&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Suhas-Pingat.jpg",
 		artSpeakerName1:"Suhas Pingat",
 		artSpeakerDecs1:"Brand Manager, Client Solutions Group,<br>Dell EMC",
 		
@@ -1113,14 +1113,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_16",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Milind-Yedkar.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Workforce Transformation",
 		relArtThumbSpeaker1:"Milind Yedkar",
 		
 		relArtThumb2:"pdfArticle_17",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Suhas-Pingat2.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Right-size technology for the modern workforce",
 		relArtThumbSpeaker2:"Suhas Pingat"
@@ -1132,7 +1132,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_16",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_16&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Milind-Yedkar.jpg",
 		artSpeakerName1:"Milind Yedkar",
 		artSpeakerDecs1:"Dir. & GM, Asia Pacific & Japan, Cloud Client Computing,<br>Dell EMC",
 		
@@ -1173,14 +1173,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_17",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Suhas-Pingat2.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Right-size technology for the modern workforce",
 		relArtThumbSpeaker1:"Suhas Pingat",
 		
 		relArtThumb2:"pdfArticle_18",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Milind-Yedkar2.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Simplify your VDI solutions planning, deployment and management with Dell Technologies",
 		relArtThumbSpeaker2:"Milind Yedkar"
@@ -1192,7 +1192,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_17",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_17&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Suhas-Pingat2.jpg",
 		artSpeakerName1:"Suhas Pingat",
 		artSpeakerDecs1:"Brand Manager, Client Solutions Group,<br>Dell EMC",
 		
@@ -1233,14 +1233,14 @@ var dataArticle=[
 
 		relArtThumb1:"pdfArticle_18",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Milind-Yedkar2.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Simplify your VDI solutions planning, deployment and management with Dell Technologies",
 		relArtThumbSpeaker1:"Milind Yedkar",
 		
 		relArtThumb2:"pdfArticle_19",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Ashish-Chalke.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Creating A Unified Endpoint Management Strategy",
 		relArtThumbSpeaker2:"Ashish Chalke"
@@ -1252,7 +1252,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_18",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_18&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Milind-Yedkar2.jpg",
 		artSpeakerName1:"Milind Yedkar",
 		artSpeakerDecs1:"Dir. & GM, Asia Pacific & Japan, Cloud Client Computing,<br>Dell EMC",
 		
@@ -1293,14 +1293,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_19",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Ashish-Chalke.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Creating A Unified Endpoint Management Strategy",
 		relArtThumbSpeaker1:"Ashish Chalke",
 		
 		relArtThumb2:"pdfArticle_20",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Aman-Ailawadi.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Migrating to Win10? How you can deploy new PC technology with greater speed and less effort",
 		relArtThumbSpeaker2:"Aman Ailawadi"
@@ -1312,7 +1312,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_19",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_19&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Ashish-Chalke.jpg",
 		artSpeakerName1:"Ashish Chalke",
 		artSpeakerDecs1:"Systems Engineer,<br>Dell Client Security",
 		
@@ -1353,14 +1353,14 @@ var dataArticle=[
 
 		relArtThumb1:"pdfArticle_20",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Aman-Ailawadi.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Migrating to Win10? How you can deploy new PC technology with greater speed and less effort",
 		relArtThumbSpeaker1:"Aman Ailawadi",
 		
 		relArtThumb2:"pdfArticle_21",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Srikanth-Ramaswamy.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Dell IT’s Journey: Empowering our Digital Workforce",
 		relArtThumbSpeaker2:"Srikanth Ramaswamy"
@@ -1372,7 +1372,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_20",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_20&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Aman-Ailawadi.jpg",
 		artSpeakerName1:"Aman Ailawadi",
 		artSpeakerDecs1:"Senior Manager,<br>Dell Services",
 		
@@ -1413,14 +1413,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_21",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Srikanth-Ramaswamy.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Dell IT’s Journey: Empowering our Digital Workforce",
 		relArtThumbSpeaker1:"Srikanth Ramaswamy",
 		
 		relArtThumb2:"pdfArticle_22",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rizwan-Shaikh.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Accelerate Workforce Transformation with VMware Workspace ONE and Dell",
 		relArtThumbSpeaker2:"Rizwan Shaikh"
@@ -1432,7 +1432,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_21",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_21&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Srikanth-Ramaswamy.jpg",
 		artSpeakerName1:"Srikanth Ramaswamy",
 		artSpeakerDecs1:"Sr. Manager, IT Business Consulting,<br>Dell EMC",
 		
@@ -1473,14 +1473,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_22",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rizwan-Shaikh.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"Accelerate Workforce Transformation with VMware Workspace ONE and Dell",
 		relArtThumbSpeaker1:"Rizwan Shaikh",
 		
 		relArtThumb2:"pdfArticle_15",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Suhas-Pingat.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"The New Reality – Innovative Ways Businesses are Embracing  AR and VR",
 		relArtThumbSpeaker2:"Suhas Pingat"
@@ -1493,9 +1493,9 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_22",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_22&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rizwan-Shaikh.jpg",
 		artSpeakerName1:"Rizwan Shaikh",
-		artSpeakerDecs1:"Senior Systems Engineer EUC,<br>Vmware",
+		artSpeakerDecs1:"Senior Systems Engineer EUC,<br>VMware",
 		
 		artSpeakerUrl2:"",
 		artSpeakerName2:"",
@@ -1534,14 +1534,14 @@ var dataArticle=[
 		
 		relArtThumb1:"pdfArticle_15",
 		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Suhas-Pingat.jpg",
 		relArtThumbDate1:"30 April | 1:10:34",
 		relArtThumbDesc1:"The New Reality – Innovative Ways Businesses are Embracing  AR and VR",
 		relArtThumbSpeaker1:"Suhas Pingat",
 		
 		relArtThumb2:"pdfArticle_16",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Milind-Yedkar.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
 		relArtThumbDesc2:"Workforce Transformation",
 		relArtThumbSpeaker2:"Milind Yedkar"
@@ -1553,7 +1553,7 @@ var dataArticle=[
 		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_23",
 		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/hi-in/events/forum/online.htm%23pdfArticle_23&title=&summary=&source=",
 		
-		artSpeakerUrl:"",
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/india/forum/post-event-assets/Rohit-Malhotra.jpg",
 		artSpeakerName1:"Rohit Malhotra",
 		artSpeakerDecs1:"Business lead, RSA,<br>Netwitness Suite for India & SAARC",
 		
