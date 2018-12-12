@@ -12,9 +12,10 @@ var dataVideo=[
 
 	VideoSpeakerName1:"Patricia Florissi",
 	VideoSpeakerDesc1:"Vice President, Global CTO for Sales and Distinguished Engineer, <br> Dell EMC",
-	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm&title=&summary=&source=",
+	
+	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23video_0",
+	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23video_0",
+	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23video_0&title=&summary=&source=",
 
 	
 	relVidIconUrl1:"https://www.delltechnologies.com/ms-my/events/ai-summit.htm#lang=en&main=replay&secondary=dtw187440956",
@@ -66,9 +67,9 @@ var dataVideo=[
 	VideoSpeakerName1:"Dune Ives ",
 	VideoSpeakerDesc1:"Executive Director, Lonely Whale ",
 
-	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm&title=&summary=&source=",
+	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23video_1",
+	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23video_1",
+	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23video_1&title=&summary=&source=",
 
 	relVidIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 	relVidIconTitle1:"WhitePaper",
@@ -120,9 +121,9 @@ var dataVideo=[
 	VideoSpeakerName2:"Lyon Poh",
 	VideoSpeakerDesc2:"Head of Digital, Innovation Leader, Chief Information Officer,<br>KPMG",
 
-	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm&title=&summary=&source=",
+	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23video_2",
+	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23video_2",
+	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23video_2&title=&summary=&source=",
 
 	relVidIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 	relVidIconTitle1:"WhitePaper",
@@ -163,9 +164,9 @@ var dataArticle=[
 	{
 		articleNumber:0,
 
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_0",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_0",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_0&title=&summary=&source=",
 
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Kishor-Bhagwat.png",
 		artSpeakerName1:"Kishor Bhagwat",
@@ -223,9 +224,9 @@ var dataArticle=[
 	{
 		articleNumber:1,
 
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_1",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_1",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_1&title=&summary=&source=",
 
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/malaysia/forum/2018/Chin.png",
 		artSpeakerName1:"Chin Boon Ping",
@@ -283,9 +284,10 @@ var dataArticle=[
 		
 	{
 		articleNumber:2,
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_2",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_2",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_2&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Matthew-Zwolenski.png",
 		artSpeakerName1:"Matthew Zwolenski",
@@ -342,9 +344,9 @@ var dataArticle=[
 	{
 		articleNumber:3,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_3",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_3",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_3&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/delltechnologies/images/forum/YonasSeme.jpg",
 		artSpeakerName1:"Yonas Seme",
@@ -401,9 +403,10 @@ var dataArticle=[
 	},
 	{
 		articleNumber:4,
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_4",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_4",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_4&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Matthew-Oostven---photo.png",
 		artSpeakerName1:"Matthew Oostveen",
@@ -459,9 +462,10 @@ var dataArticle=[
 	},
 	{
 		articleNumber:5,
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_5",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_5",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_5&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Amit-Sharma.png",
 		artSpeakerName1:"Amit Sharma",
@@ -518,9 +522,10 @@ var dataArticle=[
 	},
 	{
 		articleNumber:6,
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_6",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_6",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_6&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Simon-Low.png",
 		artSpeakerName1:"Simon Low",
@@ -577,9 +582,9 @@ var dataArticle=[
 	{
 		articleNumber:7,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_7",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_7",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_7&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Vish-Phaneendra.jpg",
 		artSpeakerName1:"Vish Phaneendra",
@@ -637,9 +642,9 @@ var dataArticle=[
 	{
 		articleNumber:8,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_8",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_8",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_8&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/delltechnologies/images/forum/Andrew%20Haschka%20-Updated.jpg",
 		artSpeakerName1:"Andrew Haschka",
@@ -697,9 +702,9 @@ var dataArticle=[
 	{
 		articleNumber:9,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_9",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_9",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_9&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/malaysia/forum/2018/Romain-Bottier.png",
 		artSpeakerName1:"Romain Bottier",
@@ -757,9 +762,9 @@ var dataArticle=[
 	{
 		articleNumber:10,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_10",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_10",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_10&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/malaysia/forum/2018/Colin-Pont.png",
 		artSpeakerName1:"Colin Pont",
@@ -817,9 +822,9 @@ var dataArticle=[
 	{
 		articleNumber:11,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_11",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_11",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_11&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Vish-Phaneendra.jpg",
 		artSpeakerName1:"Vish Phaneendra",
@@ -877,9 +882,9 @@ var dataArticle=[
 	{
 		articleNumber:12,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_12",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_12",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_12&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/delltechnologies/images/forum/ChristopherChoong.jpg",
 		artSpeakerName1:"Christopher Choong",
@@ -937,9 +942,9 @@ var dataArticle=[
 	{
 		articleNumber:13,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_13",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_13",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_13&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/delltechnologies/images/forum/ChristopherChoong.jpg",
 		artSpeakerName1:"Christopher Choong",
@@ -997,9 +1002,9 @@ var dataArticle=[
 	{
 		articleNumber:14,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_14",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_14",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_14&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/delltechnologies/images/forum/LeeSikJun.jpg",
 		artSpeakerName1:"Lee Sik Jun",
@@ -1057,9 +1062,9 @@ var dataArticle=[
 	{
 		articleNumber:15,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_15",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_15",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_15&title=&summary=&source=",
 		
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/PK-Gupta.png",
 		artSpeakerName1:"PK Gupta",
@@ -1117,9 +1122,10 @@ var dataArticle=[
 	{
 		articleNumber:16,
 		
-		ArtFBUrl:"https://www.facebook.com/delltechnologies/",
-		ArtTwitterUrl:"https://twitter.com/delltech",
-		ArtLinkedinUrl:"https://www.linkedin.com/company/delltechnologies",
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_16",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_16",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_16&title=&summary=&source=",
+
 		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/PK-Gupta.png",
 		artSpeakerName1:"PK Gupta",
 		artSpeakerDecs1:"Global Presales Lead, Data Protection,<br>Dell EMC",

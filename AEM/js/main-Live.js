@@ -639,6 +639,15 @@ $(document).ready(function(e) {
 		$("#relArtThumbDesc2").text(dataArticle[arraySelectionID].relArtThumbDesc2);
 		$("#relArtThumbSpeaker2").text(dataArticle[arraySelectionID].relArtThumbSpeaker2);
 		//ajaxFormSubmit(dataArticle[arraySelectionID].artCat,dataArticle[arraySelectionID].artMainHead);
+		if($("#"+getPDFArticleID).hasClass("hidere"))
+		{
+			$("#overlayArticle .hideheading").hide();
+			$("#overlayArticle .hidecontent").hide();
+		}
+		else{
+			$("#overlayArticle .hideheading").show();
+			$("#overlayArticle .hidecontent").show();
+		}
 		homeVideoCtrl();
 	}
 	//create cookie on pdf download

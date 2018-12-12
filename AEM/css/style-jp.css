@@ -1,7 +1,7 @@
 @charset "utf-8";
 *{padding:0;margin:0;font-family:Arial;color:#444;text-decoration:none}
 .caption{margin:0 auto;width:100%;text-align:center;color:#000;padding-top:20px;background-image:url(https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/BG.jpg);height:100%;position:relative;background-position:center;background-repeat:no-repeat;background-size:cover;overflow-y:auto;margin-bottom:0 !important}
-.caption img{max-width:300px;padding-bottom:20px;width:100%}
+.caption img{max-width:261px;padding-bottom:20px;width:100%}
 .caption p{color:#FFF;padding-bottom:20px;max-width:820px;margin:0 auto;font-size:16px}
 .outsideFrame{max-width:750px;margin:0 auto}
 .bc-player-GDmAJJBAP_default{width:100%;height:auto;margin:0 auto}
@@ -128,7 +128,7 @@ p.article-content{font-size:14px;line-height:16px;margin:10px 0 10px 0}
 .related-articles .speaker-thumb .session-col-right{padding-top:25px}
 .footer-top-new{display:block;margin:0 auto;max-width:1600px;padding-left:50px;padding-right:50px;background:transparent}
 .footer-top-new .logo-list{text-align:center;padding-top:50px;padding-bottom:36px;list-style:outside none none}
-.footer-top-new .logo-list li{margin-left:3.2%;margin-right:3.2%;display:inline}
+.footer-top-new .logo-list li{display:inline;}
 .footer-top-new .logo-list li:first-child svg{width:48px}
 .footer-top-new svg{fill:#FFF;height:48px;overflow:hidden}
 .footer-top-new .logo-list li:nth-child(2) svg{width:60.59px;margin-top:4px}
@@ -221,6 +221,27 @@ span.errmsg{font-size:12px;color:#d74324}
 .colsForInput input:-ms-input-placeholder{color:#939393}
 .colsForInput input::-ms-input-placeholder{color:#939393}
 #allsessions{font-size:10px}
+.video-sponsor h5{display: none;}
+#sponsor-logos.video-sponsor ul li {
+    display: inline;
+    list-style: none;
+}
+.video-sponsor ul li img {
+    max-width: 261px;
+    width: 100%;
+}
+.video-sponsor {
+    padding-top: 25px;
+}
+.video-sponsor ul{
+	text-align: center;
+}
+.video-sponsor.desktop {
+    display: block;
+}
+.video-sponsor.mobile {
+    display: none;
+}
 @media(min-width:1600px){.header-wrapper,.subnav-view .header-wrapper,.column-control .row.bleed.compact{max-width:unset !important}
 .caption p{max-width:unset;padding-right:90px;padding-left:90px;font-size:20px}
 #homePageLoad .outsideFrame{max-width:unset;padding-right:90px;padding-left:90px}
@@ -288,6 +309,15 @@ ul.hid-nav{display:block !important}
 .navbar ul li a{padding:16px 14px}
 #overlayArticle .article-details h5{padding-top:15px}
 .right-staic-bar.mobileLayoutAutoHeight{padding-bottom:40px}
+#sponsor-logos.video-sponsor ul li {
+    display: block;
+}
+.video-sponsor.desktop {
+    display: none;
+}
+.video-sponsor.mobile {
+    display: block;
+}
 }
 @media(max-width:575px){.navbar ul li a{padding:10px 10px}
 .videoPlayeBtn{display:block;padding-top:30px}
