@@ -598,7 +598,7 @@ $(document).ready(function(e) {
 		$("#artCat").text(dataArticle[arraySelectionID].artCat);
 		$("#artMainHead").text(dataArticle[arraySelectionID].artMainHead);
 		$("#artDate").text(dataArticle[arraySelectionID].artDate);
-		$("#artMainContent").text(dataArticle[arraySelectionID].artMainContent);
+		$("#artMainContent").html(dataArticle[arraySelectionID].artMainContent);
 		$("#artDownload").attr("href",dataArticle[arraySelectionID].artDownload);
 		$("#artDownload").removeClass();
 		$("#artDownload").addClass(dataArticle[arraySelectionID].cookieForLead);

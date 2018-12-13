@@ -242,6 +242,9 @@ span.errmsg{font-size:12px;color:#d74324}
 .video-sponsor.mobile {
     display: none;
 }
+#overlayArticle .video-sponsor.desktop{
+	padding-top: 205px;
+}
 @media(min-width:1600px){.header-wrapper,.subnav-view .header-wrapper,.column-control .row.bleed.compact{max-width:unset !important}
 .caption p{max-width:unset;padding-right:90px;padding-left:90px;font-size:20px}
 #homePageLoad .outsideFrame{max-width:unset;padding-right:90px;padding-left:90px}
