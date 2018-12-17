@@ -596,7 +596,7 @@ $(document).ready(function(e) {
 		$(".artSpeakerName2").text(dataArticle[arraySelectionID].artSpeakerName2);
 		$(".artSpeakerDecs2").html(dataArticle[arraySelectionID].artSpeakerDecs2);
 		$("#artCat").text(dataArticle[arraySelectionID].artCat);
-		$("#artMainHead").text(dataArticle[arraySelectionID].artMainHead);
+		$("#artMainHead").html(dataArticle[arraySelectionID].artMainHead);
 		$("#artDate").text(dataArticle[arraySelectionID].artDate);
 		$("#artMainContent").html(dataArticle[arraySelectionID].artMainContent);
 		$("#artDownload").attr("href",dataArticle[arraySelectionID].artDownload);
