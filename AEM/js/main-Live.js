@@ -473,7 +473,7 @@ $(document).ready(function(e) {
 		$("#videoCat").text(dataVideo[arraySelectionID].videoCat);
 		$("#videoHead").text(dataVideo[arraySelectionID].videoHead);
 		$("#videoDate").text(dataVideo[arraySelectionID].videoDate);
-		$("#videoContent").text(dataVideo[arraySelectionID].videoContent);
+		$("#videoContent").html(dataVideo[arraySelectionID].videoContent);
 		$("#VideoDownload").attr("href",dataVideo[arraySelectionID].VideoDownload);
 		$("#VideoDownload").removeClass();
 		$("#VideoDownload").addClass(dataVideo[arraySelectionID].cookieForLead);

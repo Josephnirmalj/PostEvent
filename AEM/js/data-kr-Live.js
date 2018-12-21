@@ -6,15 +6,15 @@ var dataVideo=[
 	cookieForLeadVideo:"ShowVideo_1",
 	videoHead:"Keynote - Innovate for the future",
 	videoDate:"30 April | 1:10:34",
-	videoContent:"",
+	videoContent:"하워드 엘리어스(Howard Elias) 사장은 Dell EMC의 클라이언트 및 엔터프라이즈 솔루션 그룹의 고객 지원을 위한 서비스와 IT를 이끌며, 기술 지원 및 교육, 컨설팅 서비스와 IT 조직 전체를 총괄하고 있습니다.<br>Dell EMC의 앞선 기술과 솔루션을 고객의 비즈니스 가치 창출과 연결하는 최선봉에 있는 하워드는 오랜 IT 경험과 클라우드, 모바일, IoT 등에 관한 폭넓은 지식을 바탕으로 디지털 시대에서의 비즈니스의 방향성과 혁신,정보 보호를 위한 다양한 솔루션들을 소개해 드립니다.",
 	VideoDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/ko/events/forums/2018/Howard Elias.pdf",
 	cookieForLead:"videoArticle_1",
 
 	VideoSpeakerName1:"Howard Elias",
 	VideoSpeakerDesc1:"President,<br>Dell Services & Digital",
-	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm&title=&summary=&source=",
+	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ko-kr/events/forum/online.htm",
+	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ko-kr/events/forum/online.htm",
+	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ko-kr/events/forum/online.htm&title=&summary=&source=",
 
 	relVidIconUrl1:"https://www.delltechnologies.com/ko-kr/events/ai-summit.htm#lang=ko",
 	relVidIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon33.jpg",
@@ -57,16 +57,16 @@ var dataVideo=[
 	cookieForLeadVideo:"ShowVideo_2",
 	videoHead:"Keynote - Innovate today",
 	videoDate:"30 April | 1:10:34",
-	videoContent:"",
+	videoContent:"데이빗 웹스터(David Webster) 사장은 아태지역 전체의 엔터프라이즈 고객들과 이 지역의 모든 글로벌 기업들을 책임지고 있으며 지난 수년간 탁월한 리더십으로 Dell EMC 아태지역의 역동적인 비즈니스 성장을 이끌어 왔습니다. 또한 그는 Digital Transformation의 청사진을 제시하고 IT, Security, Workforce Transformation에 앞장서고 있는 Dell EMC 내 최고 수준의 리더로서 모든 고객들이 4차 산업혁명 시대에 민첩하게 대응하고, 새로운 디지털 비즈니스 시대에서 성공할 수 있도록 Dell EMC의 앞선 기술과 솔루션을 제공하는 데 주력하고 있습니다.",
 	VideoDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/ko/events/forums/2018/David Webster.pdf",
 	cookieForLead:"videoArticle_2",
 
 	VideoSpeakerName1:"David Webster",
 	VideoSpeakerDesc1:"President – Asia Pacific and Japan Enterprise Sales & Customer Operations,<br>Dell EMC",
 
-	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm&title=&summary=&source=",
+	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ko-kr/events/forum/online.htm",
+	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ko-kr/events/forum/online.htm",
+	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ko-kr/events/forum/online.htm&title=&summary=&source=",
 
 	relVidIconUrl1:"",
 	relVidIconImg1:"",
@@ -119,9 +119,9 @@ var dataVideo=[
 	VideoSpeakerName2:"",
 	VideoSpeakerDesc2:"",
 
-	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm",
-	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/en-sg/events/forum/replay.htm&title=&summary=&source=",
+	FBShareURL:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/en-sg/events/forum/online.htm",
+	TwitterShareURL:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/en-sg/events/forum/online.htm",
+	LinkedinShareURL:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/en-sg/events/forum/online.htm&title=&summary=&source=",
 
 	relVidIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
 	relVidIconTitle1:"WhitePaper",
