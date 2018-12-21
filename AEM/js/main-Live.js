@@ -630,13 +630,13 @@ $(document).ready(function(e) {
 		//$(".relArtThumb1").addClass(dataArticle[arraySelectionID].relArtThumbOverlay1);
 		$("#relArtThumbImg1").attr("src",dataArticle[arraySelectionID].relArtThumbImg1);
 		$("#relArtThumbDate1").text(dataArticle[arraySelectionID].relArtThumbDate1);
-		$("#relArtThumbDesc1").text(dataArticle[arraySelectionID].relArtThumbDesc1);
+		$("#relArtThumbDesc1").html(dataArticle[arraySelectionID].relArtThumbDesc1);
 		$("#relArtThumbSpeaker1").text(dataArticle[arraySelectionID].relArtThumbSpeaker1);
 		$(".relArtThumb2").attr("id",dataArticle[arraySelectionID].relArtThumb2);
 		//$(".relArtThumb2").addClass(dataArticle[arraySelectionID].relArtThumbOverlay2);
 		$("#relArtThumbImg2").attr("src",dataArticle[arraySelectionID].relArtThumbImg2);
 		$("#relArtThumbDate2").text(dataArticle[arraySelectionID].relArtThumbDate2);
-		$("#relArtThumbDesc2").text(dataArticle[arraySelectionID].relArtThumbDesc2);
+		$("#relArtThumbDesc2").html(dataArticle[arraySelectionID].relArtThumbDesc2);
 		$("#relArtThumbSpeaker2").text(dataArticle[arraySelectionID].relArtThumbSpeaker2);
 		//ajaxFormSubmit(dataArticle[arraySelectionID].artCat,dataArticle[arraySelectionID].artMainHead);
 		if($("#"+getPDFArticleID).hasClass("hidere"))
