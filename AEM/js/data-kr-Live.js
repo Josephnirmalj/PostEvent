@@ -52,7 +52,7 @@ var dataVideo=[
 },
 {
 	articleNumber:1,
-	videoPlayerURL:"5975710021001",
+	videoPlayerURL:"5982447558001",
 	showVideoThum:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/ko/events/forums/2018/David.png",
 	cookieForLeadVideo:"ShowVideo_2",
 	videoHead:"Keynote - Innovate today",
@@ -259,10 +259,10 @@ var dataArticle=[
 		relArtIconDecs3:"Dell EMC- OpenManage Enterprise Video",
 		relArtClicksCookie3:"clicksRelatedArticle_6",
 
-		relArtIconUrl4:"https://korea.emc.com/collateral/analyst-reports/esg-networking-role-in-it-transformation.pdf",
+		relArtIconUrl4:"https://www.dellemc.com/content/dam/uwaem/production-design-assets/ko/events/forums/2018/Windows-Server2008-EOS-Overview.pdf",
 		relArtIconImg4:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
-		relArtIconTitle4:"ESG Report",
-		relArtIconDecs4:"The Network’s Foundational Role In IT Transformation Brief",
+		relArtIconTitle4:"Microsoft Content",
+		relArtIconDecs4:"Begin preparing for Windows Server 2008 and 2008 R2 end of support",
 		relArtClicksCookie4:"clicksRelatedArticle_7",
 
 		relArtThumb1:"pdfArticle_2",
@@ -495,10 +495,10 @@ var dataArticle=[
 		relArtIconDecs3:"The Role of Modular Infrastructure in IT Transformation",
 		relArtClicksCookie3:"clicksRelatedArticle_17",
 		
-		relArtIconUrl4:"https://www.dellemc.com/ko-kr/storage/data-storage/network-attached-storage.htm#compare0=0",
-		relArtIconImg4:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon33.jpg",
-		relArtIconTitle4:"관련 제품 자세히보기",
-		relArtIconDecs4:"",
+		relArtIconUrl4:"https://www.dellemc.com/content/dam/uwaem/production-design-assets/ko/events/forums/2018/Windows-Server2008-EOS-Overview.pdf",
+		relArtIconImg4:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+		relArtIconTitle4:"Microsoft Content",
+		relArtIconDecs4:"Begin preparing for Windows Server 2008 and 2008 R2 end of support",
 		relArtClicksCookie4:"clicksRelatedArticle_18",
 		
 		relArtThumb1:"pdfArticle_6",
@@ -1146,11 +1146,11 @@ var dataArticle=[
 		relArtIconDecs2:"",
 		relArtClicksCookie2:"clicksRelatedArticle_45",
 
-		relArtIconUrl3:"",
-		relArtIconImg3:"",
-		relArtIconTitle3:"",
-		relArtIconDecs3:"",
-		relArtClicksCookie3:"",
+		relArtIconUrl3:"https://www.dellemc.com/content/dam/uwaem/production-design-assets/ko/events/forums/2018/Windows7-EOS-Overview.pdf",
+		relArtIconImg3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+		relArtIconTitle3:"Microsoft Content",
+		relArtIconDecs3:"Make the shift to a new Windows 10 Pro PC",
+		relArtClicksCookie3:"clicksRelatedArticle_47",
 
 		relArtIconUrl4:"",
 		relArtIconImg4:"",
@@ -1201,16 +1201,16 @@ var dataArticle=[
 		relArtClicksCookie1:"clicksRelatedArticle_44",
 		
 		relArtIconUrl2:"https://www.dellemc.com/ko-kr/workforce-solutions/adockforeveryneed.htm#scroll=off",
-		relArtIconImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+		relArtIconImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon33.jpg",
 		relArtIconTitle2:"A dock for every need.",
 		relArtIconDecs2:"",
 		relArtClicksCookie2:"clicksRelatedArticle_45",
 
-		relArtIconUrl3:"",
-		relArtIconImg3:"",
-		relArtIconTitle3:"",
-		relArtIconDecs3:"",
-		relArtClicksCookie3:"",
+		relArtIconUrl3:"https://www.dellemc.com/content/dam/uwaem/production-design-assets/ko/events/forums/2018/Windows7-EOS-Overview.pdf",
+		relArtIconImg3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+		relArtIconTitle3:"Microsoft Content",
+		relArtIconDecs3:"Make the shift to a new Windows 10 Pro PC",
+		relArtClicksCookie3:"clicksRelatedArticle_48",
 
 		relArtIconUrl4:"",
 		relArtIconImg4:"",
@@ -1261,7 +1261,7 @@ var dataArticle=[
 		relArtClicksCookie1:"clicksRelatedArticle_44",
 		
 		relArtIconUrl2:"https://www.dellemc.com/ko-kr/workforce-solutions/adockforeveryneed.htm#scroll=off",
-		relArtIconImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+		relArtIconImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon33.jpg",
 		relArtIconTitle2:"A dock for every need.",
 		relArtIconDecs2:"",
 		relArtClicksCookie2:"clicksRelatedArticle_45",
