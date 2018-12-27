@@ -473,7 +473,7 @@ $(document).ready(function(e) {
 		$("#videoCat").text(dataVideo[arraySelectionID].videoCat);
 		$("#videoHead").text(dataVideo[arraySelectionID].videoHead);
 		$("#videoDate").text(dataVideo[arraySelectionID].videoDate);
-		$("#videoContent").text(dataVideo[arraySelectionID].videoContent);
+		$("#videoContent").html(dataVideo[arraySelectionID].videoContent);
 		$("#VideoDownload").attr("href",dataVideo[arraySelectionID].VideoDownload);
 		$("#VideoDownload").removeClass();
 		$("#VideoDownload").addClass(dataVideo[arraySelectionID].cookieForLead);
@@ -585,7 +585,7 @@ $(document).ready(function(e) {
 		}
 		var splitPdfID = getPDFArticleID.split("_");
 		var arraySelectionID = splitPdfID[1];
-		$("#clickSrcTitle").val(dataArticle[arraySelectionID].artMainHead);
+		$("#clickSrcTitle").html(dataArticle[arraySelectionID].artMainHead);
 		$("#clickSrcCat").val(dataArticle[arraySelectionID].artCat);
 		$(".ArtFBUrl").attr("href",dataArticle[arraySelectionID].ArtFBUrl);
 		$(".ArtTwitterUrl").attr("href",dataArticle[arraySelectionID].ArtTwitterUrl);
@@ -814,7 +814,7 @@ $(document).ready(function(e) {
 			var jobTitle = $("#jobTitle").val();
 			var country = $("#country").val();
 			var comments = $("#comments").val();
-			var clickSrcTitle = $("#clickSrcTitle").val();
+			var clickSrcTitle = $("#clickSrcTitle").text();
 			var clickSrcCat = $("#clickSrcCat").val();
 			if(fname == ""){
 				errMsg = "fn";
