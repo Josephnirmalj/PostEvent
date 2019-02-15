@@ -473,7 +473,7 @@ $(document).ready(function(e) {
 		$("#videoCat").text(dataVideo[arraySelectionID].videoCat);
 		$("#videoHead").text(dataVideo[arraySelectionID].videoHead);
 		$("#videoDate").text(dataVideo[arraySelectionID].videoDate);
-		$("#videoContent").text(dataVideo[arraySelectionID].videoContent);
+		$("#videoContent").html(dataVideo[arraySelectionID].videoContent);
 		$("#VideoDownload").attr("href",dataVideo[arraySelectionID].VideoDownload);
 		$("#VideoDownload").removeClass();
 		$("#VideoDownload").addClass(dataVideo[arraySelectionID].cookieForLead);
@@ -596,9 +596,9 @@ $(document).ready(function(e) {
 		$(".artSpeakerName2").text(dataArticle[arraySelectionID].artSpeakerName2);
 		$(".artSpeakerDecs2").html(dataArticle[arraySelectionID].artSpeakerDecs2);
 		$("#artCat").text(dataArticle[arraySelectionID].artCat);
-		$("#artMainHead").text(dataArticle[arraySelectionID].artMainHead);
+		$("#artMainHead").html(dataArticle[arraySelectionID].artMainHead);
 		$("#artDate").text(dataArticle[arraySelectionID].artDate);
-		$("#artMainContent").text(dataArticle[arraySelectionID].artMainContent);
+		$("#artMainContent").html(dataArticle[arraySelectionID].artMainContent);
 		$("#artDownload").attr("href",dataArticle[arraySelectionID].artDownload);
 		$("#artDownload").removeClass();
 		$("#artDownload").addClass(dataArticle[arraySelectionID].cookieForLead);
@@ -630,13 +630,13 @@ $(document).ready(function(e) {
 		//$(".relArtThumb1").addClass(dataArticle[arraySelectionID].relArtThumbOverlay1);
 		$("#relArtThumbImg1").attr("src",dataArticle[arraySelectionID].relArtThumbImg1);
 		$("#relArtThumbDate1").text(dataArticle[arraySelectionID].relArtThumbDate1);
-		$("#relArtThumbDesc1").text(dataArticle[arraySelectionID].relArtThumbDesc1);
+		$("#relArtThumbDesc1").html(dataArticle[arraySelectionID].relArtThumbDesc1);
 		$("#relArtThumbSpeaker1").text(dataArticle[arraySelectionID].relArtThumbSpeaker1);
 		$(".relArtThumb2").attr("id",dataArticle[arraySelectionID].relArtThumb2);
 		//$(".relArtThumb2").addClass(dataArticle[arraySelectionID].relArtThumbOverlay2);
 		$("#relArtThumbImg2").attr("src",dataArticle[arraySelectionID].relArtThumbImg2);
 		$("#relArtThumbDate2").text(dataArticle[arraySelectionID].relArtThumbDate2);
-		$("#relArtThumbDesc2").text(dataArticle[arraySelectionID].relArtThumbDesc2);
+		$("#relArtThumbDesc2").html(dataArticle[arraySelectionID].relArtThumbDesc2);
 		$("#relArtThumbSpeaker2").text(dataArticle[arraySelectionID].relArtThumbSpeaker2);
 		//ajaxFormSubmit(dataArticle[arraySelectionID].artCat,dataArticle[arraySelectionID].artMainHead);
 		if($("#"+getPDFArticleID).hasClass("hidere"))
@@ -699,6 +699,8 @@ $(document).ready(function(e) {
 		var countA="";
 		var getClassName = $(this).attr("class");
 		var getTitle = $("#artMainHead").text();
+		alert(getTitle);
+		console.log(getTitle);
 		var getCar = $("#artCat").text();
 		document.cookie = getClassName + "="+1+";expires="+newdate+";path=/";
 			var getCommonLength = $(".pdf-doc-content").length;
@@ -937,4 +939,4 @@ $(document).ready(function(e) {
 		var segment = pathArray[1];
 		return segment;
 	} 
-});
+})

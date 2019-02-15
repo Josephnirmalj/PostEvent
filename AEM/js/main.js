@@ -290,7 +290,7 @@ $(document).ready(function(e) {
 				}
 				if(errmsg == ""){
 					var url = "//s2502.t.eloqua.com/e/f2?elqFormName="+eloquaFormName+"&elqSiteID="+SiteID+"&";
-					var data="emailAddress="+email+"&optin="+optin+"&viewedVideos="+videoCookie+"&formSubmits="+articleCookie+"&webVisit="+pageViewCount+"&relatedArticles="+relatedArticles+"&region="+regionalUpdate;
+				    var data="emailAddress="+email+"&optin="+optin+"&viewedVideos="+videoCookie+"&formSubmits="+articleCookie+"&webVisit="+pageViewCount+"&relatedArticles="+relatedArticles+"&region="+regionalUpdate;
 					$.ajax({
 				url:url,
 				type: "POST",
@@ -473,7 +473,7 @@ $(document).ready(function(e) {
 		$("#videoCat").text(dataVideo[arraySelectionID].videoCat);
 		$("#videoHead").text(dataVideo[arraySelectionID].videoHead);
 		$("#videoDate").text(dataVideo[arraySelectionID].videoDate);
-		$("#videoContent").text(dataVideo[arraySelectionID].videoContent);
+		$("#videoContent").html(dataVideo[arraySelectionID].videoContent);
 		$("#VideoDownload").attr("href",dataVideo[arraySelectionID].VideoDownload);
 		$("#VideoDownload").removeClass();
 		$("#VideoDownload").addClass(dataVideo[arraySelectionID].cookieForLead);
@@ -585,7 +585,7 @@ $(document).ready(function(e) {
 		}
 		var splitPdfID = getPDFArticleID.split("_");
 		var arraySelectionID = splitPdfID[1];
-		$("#clickSrcTitle").val(dataArticle[arraySelectionID].artMainHead);
+		$("#clickSrcTitle").html(dataArticle[arraySelectionID].artMainHead);
 		$("#clickSrcCat").val(dataArticle[arraySelectionID].artCat);
 		$(".ArtFBUrl").attr("href",dataArticle[arraySelectionID].ArtFBUrl);
 		$(".ArtTwitterUrl").attr("href",dataArticle[arraySelectionID].ArtTwitterUrl);
@@ -596,9 +596,9 @@ $(document).ready(function(e) {
 		$(".artSpeakerName2").text(dataArticle[arraySelectionID].artSpeakerName2);
 		$(".artSpeakerDecs2").html(dataArticle[arraySelectionID].artSpeakerDecs2);
 		$("#artCat").text(dataArticle[arraySelectionID].artCat);
-		$("#artMainHead").text(dataArticle[arraySelectionID].artMainHead);
+		$("#artMainHead").html(dataArticle[arraySelectionID].artMainHead);
 		$("#artDate").text(dataArticle[arraySelectionID].artDate);
-		$("#artMainContent").text(dataArticle[arraySelectionID].artMainContent);
+		$("#artMainContent").html(dataArticle[arraySelectionID].artMainContent);
 		$("#artDownload").attr("href",dataArticle[arraySelectionID].artDownload);
 		$("#artDownload").removeClass();
 		$("#artDownload").addClass(dataArticle[arraySelectionID].cookieForLead);
@@ -630,13 +630,13 @@ $(document).ready(function(e) {
 		//$(".relArtThumb1").addClass(dataArticle[arraySelectionID].relArtThumbOverlay1);
 		$("#relArtThumbImg1").attr("src",dataArticle[arraySelectionID].relArtThumbImg1);
 		$("#relArtThumbDate1").text(dataArticle[arraySelectionID].relArtThumbDate1);
-		$("#relArtThumbDesc1").text(dataArticle[arraySelectionID].relArtThumbDesc1);
+		$("#relArtThumbDesc1").html(dataArticle[arraySelectionID].relArtThumbDesc1);
 		$("#relArtThumbSpeaker1").text(dataArticle[arraySelectionID].relArtThumbSpeaker1);
 		$(".relArtThumb2").attr("id",dataArticle[arraySelectionID].relArtThumb2);
 		//$(".relArtThumb2").addClass(dataArticle[arraySelectionID].relArtThumbOverlay2);
 		$("#relArtThumbImg2").attr("src",dataArticle[arraySelectionID].relArtThumbImg2);
 		$("#relArtThumbDate2").text(dataArticle[arraySelectionID].relArtThumbDate2);
-		$("#relArtThumbDesc2").text(dataArticle[arraySelectionID].relArtThumbDesc2);
+		$("#relArtThumbDesc2").html(dataArticle[arraySelectionID].relArtThumbDesc2);
 		$("#relArtThumbSpeaker2").text(dataArticle[arraySelectionID].relArtThumbSpeaker2);
 		//ajaxFormSubmit(dataArticle[arraySelectionID].artCat,dataArticle[arraySelectionID].artMainHead);
 		if($("#"+getPDFArticleID).hasClass("hidere"))
@@ -804,7 +804,7 @@ $(document).ready(function(e) {
 			$("#popupOverlay").addClass("hide");
 		});
 		//form validation
-		$("#btn-submit").on("click",function(){
+		$("#btn-submit").on("click",function(){			
 			var errMsg="";
 			var fname = $("#firstName").val();
 			var lname = $("#lastName").val();
@@ -814,7 +814,7 @@ $(document).ready(function(e) {
 			var jobTitle = $("#jobTitle").val();
 			var country = $("#country").val();
 			var comments = $("#comments").val();
-			var clickSrcTitle = $("#clickSrcTitle").val();
+			var clickSrcTitle = $("#clickSrcTitle").text();
 			var clickSrcCat = $("#clickSrcCat").val();
 			if(fname == ""){
 				errMsg = "fn";
@@ -876,7 +876,7 @@ $(document).ready(function(e) {
 			}
 			if(errMsg == ""){
 				//console.log("success");
-				//var url ="//s2502.t.eloqua.com/e/f2?elqFormName=19Q2-APJ-ANZ-DTF-PostEvent-Investigation-Gate&elqSiteID=2502";
+				//var url ="//s2502.t.eloqua.com/e/f2?elqFormName=19Q2-APJ-ANZ-DTF-PostEvent-Investigation-Gate&elqSiteID=2502";				
 				var data ="&firstName="+fname+"&lastName="+lname+"&emailAddress="+email+"&busPhone="+busPhone+"&company="+company+"&jobFunction1="+jobTitle+"&country="+country+"&clickSrcTitle="+clickSrcTitle+"&clickSrcCat="+clickSrcCat+"&region="+regionalUpdate+"&comments="+comments;
 				$.ajax({
 				url:"//s2502.t.eloqua.com/e/f2?elqFormName=FY19Q3-APJ-SEA-DTF-Replay-Contactus&elqSiteID=2502",
@@ -895,7 +895,7 @@ $(document).ready(function(e) {
 				});
 
 			}
-			else{
+			else{			
 				return false;
 			}
 		});
