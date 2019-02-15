@@ -812,12 +812,12 @@ var dataArticle=[
 		relArtThumbDesc1:'Pivotal & Dell EMC Guide To Containers & Microservices: Future Server Platforms For "Serverless" Computing',
 		relArtThumbSpeaker1:"Vish Phaneendra",
 		
-		relArtThumb2:"pdfArticle_7",
+		relArtThumb2:"pdfArticle_18",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Vish-Phaneendra.jpg",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/malaysia/forum/2018/Nikhil.png",
 		relArtThumbDate2:"30 April | 1:10:34",
-		relArtThumbDesc2:"Introduction to Pivotal Software",
-		relArtThumbSpeaker2:"Vish Phaneendra"
+		relArtThumbDesc2:"Unlocking Your Data Capital: A Sneak-Peek Into The Future Of Isilon & ECS",
+		relArtThumbSpeaker2:"Nikhil Madan"
 	},
 	{
 		articleNumber:11,
@@ -865,19 +865,19 @@ var dataArticle=[
 		relArtIconDecs4:"",
 		relArtClicksCookie4:"",
 		
-		relArtThumb1:"pdfArticle_7",
-		relArtThumbOverlay1:"pdf-doc-content",
-		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Vish-Phaneendra.jpg",
-		relArtThumbDate1:"30 April | 1:10:34",
-		relArtThumbDesc1:"Introduction to Pivotal Software",
-		relArtThumbSpeaker1:"Vish Phaneendra",
-		
-		relArtThumb2:"pdfArticle_8",
+		relArtThumb2:"pdfArticle_7",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/delltechnologies/images/forum/Andrew%20Haschka%20-Updated.jpg",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Vish-Phaneendra.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
-		relArtThumbDesc2:"Building a Foundation ​for Digital Business​",
-		relArtThumbSpeaker2:"Andrew Haschka"
+		relArtThumbDesc2:"Introduction to Pivotal Software",
+		relArtThumbSpeaker2:"Vish Phaneendra",
+		
+		relArtThumb1:"pdfArticle_18",
+		relArtThumbOverlay1:"pdf-doc-content",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/malaysia/forum/2018/Nikhil.png",
+		relArtThumbDate1:"30 April | 1:10:34",
+		relArtThumbDesc1:"Unlocking Your Data Capital: A Sneak-Peek Into The Future Of Isilon & ECS​",
+		relArtThumbSpeaker1:"Nikhil Madan"
 	},
 	{
 		articleNumber:12,
@@ -1112,12 +1112,12 @@ var dataArticle=[
 		relArtThumbDesc1:"GDPR: What is it, Why Do I Care and What Should I Do?",
 		relArtThumbSpeaker1:"PK Gupta",
 		
-		relArtThumb2:"",
+		relArtThumb2:"pdfArticle_17",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/delltechnologies/images/forum/JohnKuan.jpg",
 		relArtThumbDate2:"30 April | 1:10:34",
-		relArtThumbDesc2:"",
-		relArtThumbSpeaker2:""
+		relArtThumbDesc2:"VMware NSX Architecture & Container Solution In The Dell EMC Ecosystem",
+		relArtThumbSpeaker2:"John Kuan",
 	},
 	{
 		articleNumber:16,
@@ -1165,6 +1165,66 @@ var dataArticle=[
 		relArtIconDecs4:"",
 		relArtClicksCookie4:"",
 		
+		relArtThumb1:"pdfArticle_17",
+		relArtThumbOverlay1:"pdf-doc-content",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/delltechnologies/images/forum/JohnKuan.jpg",
+		relArtThumbDate1:"30 April | 1:10:34",
+		relArtThumbDesc1:"VMware NSX Architecture & Container Solution In The Dell EMC Ecosystem",
+		relArtThumbSpeaker1:"John Kuan",
+		
+		relArtThumb2:"pdfArticle_15",
+		relArtThumbOverlay2:"pdf-doc-content",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/PK-Gupta.png",
+		relArtThumbDate2:"30 April | 1:10:34",
+		relArtThumbDesc2:"Cyber-Protection & Recovery – Protecting Your Business From a Destructive Cyber-Attack with RSA & Dell EMC",
+		relArtThumbSpeaker2:"PK Gupta"
+	},		
+	{
+		articleNumber:17,
+		
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_17",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_17",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_17&title=&summary=&source=",
+
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/delltechnologies/images/forum/JohnKuan.jpg",
+		artSpeakerName1:"John Kuan",
+		artSpeakerDecs1:"Senior Sales Manager, Networking & Security,<br>VMware Malaysia",
+		
+		artSpeakerUrl2:"",
+		artSpeakerName2:"",
+		artSpeakerDecs2:"",
+		
+		artCat:"Security Transformation",
+		artMainHead:"VMware NSX Architecture & Container Solution In The Dell EMC Ecosystem",
+		artDate:"30 April | 1:10:34",
+		artMainContent:"VMware NSX Portfolio is a key component of SDDC architecture and the bridge to a true hybrid cloud. This session will go over basic NSX Data Center functionality and explain its touch points with Dell EMC as well as showing new capabilities for containers.",
+		artDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/malaysia/forum/post-event-assets/VMWare NSX.pdf",
+		cookieForLead:"pdfArticleLead_18",
+
+		relArtIconUrl1:"",
+		relArtIconImg1:"",
+		relArtIconTitle1:"",
+		relArtIconDecs1:"",
+		relArtClicksCookie1:"",
+
+		relArtIconUrl2:"",
+		relArtIconImg2:"",
+		relArtIconTitle2:"",
+		relArtIconDecs2:"",
+		relArtClicksCookie2:"",
+		
+		relArtIconUrl3:"",
+		relArtIconImg3:"",
+		relArtIconTitle3:"",
+		relArtIconDecs3:"",
+		relArtClicksCookie3:"",
+		
+		relArtIconUrl4:"",
+		relArtIconImg4:"",
+		relArtIconTitle4:"",
+		relArtIconDecs4:"",
+		relArtClicksCookie4:"",
+		
 		relArtThumb1:"pdfArticle_15",
 		relArtThumbOverlay1:"pdf-doc-content",
 		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/PK-Gupta.png",
@@ -1172,11 +1232,71 @@ var dataArticle=[
 		relArtThumbDesc1:"Cyber-Protection & Recovery – Protecting Your Business From a Destructive Cyber-Attack with RSA & Dell EMC",
 		relArtThumbSpeaker1:"PK Gupta",
 		
-		relArtThumb2:"",
+		relArtThumb2:"pdfArticle_16",
 		relArtThumbOverlay2:"pdf-doc-content",
-		relArtThumbImg2:"",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/PK-Gupta.png",
 		relArtThumbDate2:"30 April | 1:10:34",
-		relArtThumbDesc2:"",
-		relArtThumbSpeaker2:""
-	},		
+		relArtThumbDesc2:"GDPR: What is it, Why Do I Care and What Should I Do?",
+		relArtThumbSpeaker2:"PK Gupta",
+	},	
+	{
+		articleNumber:18,
+		
+		ArtFBUrl:"https://www.facebook.com/sharer/sharer.php?u=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_18",
+		ArtTwitterUrl:"https://twitter.com/home?status=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_18",
+		ArtLinkedinUrl:"https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.delltechnologies.com/ms-my/events/forum/online.htm%23pdfArticle_18&title=&summary=&source=",
+
+		artSpeakerUrl:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/malaysia/forum/2018/Nikhil.png",
+		artSpeakerName1:"Nikhil Madan",
+		artSpeakerDecs1:"General Manager (India & South East Asia) Unstructured Data Solution,<br>Dell EMC",
+		
+		artSpeakerUrl2:"",
+		artSpeakerName2:"",
+		artSpeakerDecs2:"",
+		
+		artCat:"Digital Transformation",
+		artMainHead:"Unlocking Your Data Capital: A Sneak-Peek Into The Future Of Isilon & ECS",
+		artDate:"30 April | 1:10:34",
+		artMainContent:"Unstructured data is driving the digital transformation that is disrupting nearly every business today. Organizations that harness their file, object, and streaming data, can gain a massive competitive advantage. In this session, we’ll describe a data strategy with Isilon and ECS that can boost the value of your “data capital” and provide a powerful competitive edge for your organization. ",
+		artDownload:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/malaysia/forum/post-event-assets/Unlocking%20Your%20Data%20Capital%20A%20Sneak%20Peek%20Into%20The%20Future%20Of%20Isilon%20&%20ECS.pdf",
+		cookieForLead:"pdfArticleLead_19",
+
+		relArtIconUrl1:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/forrester-8-steps-cios-must-take-to-transform-with-artificial-intelligence.pdf",
+		relArtIconImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+		relArtIconTitle1:"Forrester",
+		relArtIconDecs1:"8 Steps CIOs Must Take to Transform with AI",
+		relArtClicksCookie1:"clicksRelatedArticle_17",
+
+		relArtIconUrl2:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/forbes-insights-artificially-intelligent-data-centers.pdf",
+		relArtIconImg2:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+		relArtIconTitle2:"Third Party Report",
+		relArtIconDecs2:"Forbes insights- Artificially Intelligent Data Centers-How the C-Suite Is Embracing Continuous Change to Drive Value",
+		relArtClicksCookie2:"clicksRelatedArticle_18",
+
+		relArtIconUrl3:"https://www.delltechnologies.com/content/dam/delltechnologies/assets/DTF-Post-Event/practitioner-guide-to-artificial-intelligence.pdf",
+		relArtIconImg3:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/Post-Event-Assets/icon44.jpg",
+		relArtIconTitle3:"Third Party Report",
+		relArtIconDecs3:"Moor Insights - A Practitioners Guide To Artificial Intelligence",
+		relArtClicksCookie3:"clicksRelatedArticle_19",
+		
+		relArtIconUrl4:"",
+		relArtIconImg4:"",
+		relArtIconTitle4:"",
+		relArtIconDecs4:"",
+		relArtClicksCookie4:"",
+		
+		relArtThumb1:"pdfArticle_7",
+		relArtThumbOverlay1:"pdf-doc-content",
+		relArtThumbImg1:"https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/english-singapore/events/forum/2018/Vish-Phaneendra.jpg",
+		relArtThumbDate1:"30 April | 1:10:34",
+		relArtThumbDesc1:"Introduction to Pivotal Software",
+		relArtThumbSpeaker1:"Vish Phaneendra",
+		
+		relArtThumb2:"pdfArticle_8",
+		relArtThumbOverlay2:"pdf-doc-content",
+		relArtThumbImg2:"https://www.delltechnologies.com/content/dam/delltechnologies/images/forum/Andrew%20Haschka%20-Updated.jpg",
+		relArtThumbDate2:"30 April | 1:10:34",
+		relArtThumbDesc2:"Building a Foundation ​for Digital Business​",
+		relArtThumbSpeaker2:"Andrew Haschka"
+	},	
 ];
