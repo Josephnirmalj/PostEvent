@@ -585,7 +585,7 @@ $(document).ready(function(e) {
 		}
 		var splitPdfID = getPDFArticleID.split("_");
 		var arraySelectionID = splitPdfID[1];
-		$("#clickSrcTitle").val(dataArticle[arraySelectionID].artMainHead);
+		$("#clickSrcTitle").html(dataArticle[arraySelectionID].artMainHead);
 		$("#clickSrcCat").val(dataArticle[arraySelectionID].artCat);
 		$(".ArtFBUrl").attr("href",dataArticle[arraySelectionID].ArtFBUrl);
 		$(".ArtTwitterUrl").attr("href",dataArticle[arraySelectionID].ArtTwitterUrl);
@@ -816,7 +816,7 @@ $(document).ready(function(e) {
 			var jobTitle = $("#jobTitle").val();
 			var country = $("#country").val();
 			var comments = $("#comments").val();
-			var clickSrcTitle = $("#clickSrcTitle").val();
+			var clickSrcTitle = $("#clickSrcTitle").text();
 			var clickSrcCat = $("#clickSrcCat").val();
 			if(fname == ""){
 				errMsg = "fn";
